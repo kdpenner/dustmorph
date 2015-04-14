@@ -50,7 +50,8 @@ Amherst, MA 01003, USA}
 Do spatial distributions of dust grains in galaxies have typical forms, as do
 spatial distributions of stars?  We investigate whether or not the distributions
 resemble
-uniform foreground screens, as commonly assumed.  We use rest-frame infrared,
+uniform foreground screens, as commonly assumed by the high-redshift galaxy
+community.  We use rest-frame infrared,
 ultraviolet, and H$\alpha$ line luminosities of dust-poor and dusty galaxies
 at $z \sim 0$ and $z \sim 1$ to compare measured H$\alpha$ escape fractions
 with those predicted by the Calzetti attenuation formula.  The predictions,
@@ -88,19 +89,30 @@ Mpc.  Their average dust mass profile is a constant fraction of their average
 halo mass profile \citep[][see also \citealt{zaritsky94}]{menard10}.
 
 Dust attenuates a galaxy's intrinsic luminosity at ultraviolet (UV) and optical
-wavelengths.  We often assume that dust grains
+wavelengths.  To recover an intrinsic luminosity from an emergent luminosity we
+often assume that dust grains
 are distributed as a uniformly thick screen between us and the galaxy's stars
-and gas \citep{calzetti94}.  From the uniform screen assumption follows an
-attenuation
-formula that depends solely on wavelength; intrinsic luminosity is recovered
-from emergent luminosity and attenuation calculated from the formula.
+\citep{calzetti94}.  From the uniform screen assumption follows an
+attenuation formula that depends solely on wavelength.
 
 An attenuation formula is denoted $k(\lambda)$ or $k'(\lambda)$.  It differs
 from an extinction formula, which is independent of the spatial distribution
 of dust.  When we derive an extinction formula, it is valid for the small area
-surrounding a star in the Milky Way, not the large area containing a mix of
-stars and gas in distant galaxies.  In an illustrative sense an attenuation
-formula is an extinction formula convolved with a spatial distribution of dust.
+surrounding a star in the Milky Way, not the large area containing a mixture of
+stars in distant galaxies.
+
+If we write an equation like this:
+
+\begin{math}
+L_{\mathrm{emergent}}/L_{\mathrm{intrinsic}} = 10^{-\mathrm{A}/2.5} = 10^{-\mathrm{E(B-V)} k(\lambda)/2.5}
+\end{math}
+
+we assume a uniform screen not because $k(\lambda)$ is solely dependent on
+wavelength, but because $L_{\mathrm{emergent}}/L_{\mathrm{intrinsic}}$ is solely
+dependent on
+wavelength.  In an illustrative sense
+$L_{\mathrm{emergent}}/L_{\mathrm{intrinsic}}$
+is an attenuation formula convolved with a spatial distribution of dust.
 
 The uniform screen assumption is unrealistic.  A low-redshift galaxy with a
 high emergent UV luminosity and a low IR luminosity---a dust-poor
@@ -168,7 +180,14 @@ universally valid.
 %in \S\ref{sec:data}.  The relation is in \S\ref{sec:results}.  Our argument is
 %in \S\ref{sec:discuss}.  We conclude in \S\ref{sec:conclude}.
 For this paper we assume a cosmology with $H_{0} = 70$ km s$^{-1}$ Mpc $^{-1}$,
-$\Omega_{\mathrm{m}} = 0.3$, and $\Omega_{\Lambda} = 0.7$.
+$\Omega_{\mathrm{m}} = 0.3$, and $\Omega_{\Lambda} = 0.7$.  Our terminology
+is: (1) a \emph{uniform} screen is a screen equally thick between a region with
+stars which ionize gas and a region with stars which emit in the UV and do not
+ionize gas; (2) a \emph{dust-poor} galaxy is selected from a UV image and
+generally has low values of UV and H$\alpha$ attenuation; and (3) a \emph{dusty}
+galaxy is selected from an IR image and generally has high values of UV and
+H$\alpha$ attenuation.  The samples of dust-poor and dusty galaxies are not
+dichotomous.  More details are in the following section.
 
 \section{Data}\label{sec:data}
 
@@ -1455,11 +1474,11 @@ fractions for dusty galaxies at $z \sim 1$.  If the dispersion is real, these
 galaxies have diverse dust distributions.
 \end{enumerate}
 
-ALMA is beginning to produce images of the dust distributions in galaxies.
-These images lead to direct tests, independent of the attenuation formula, of
-the uniform screen assumption.  They also have the potential to reveal the
-parts of galaxies that may never be detected at UV and optical wavelengths:
-surprises surely abound.
+ALMA is beginning to produce images of the dust distributions in high-redshift
+galaxies.  These images lead to direct tests, independent of the attenuation
+formula, of the uniform screen assumption.  They also have the potential to
+reveal the parts of galaxies that may never be detected at UV and optical
+wavelengths: surprises surely abound.
 
 \begin{thebibliography}
 
