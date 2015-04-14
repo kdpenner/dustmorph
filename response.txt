@@ -1,0 +1,249 @@
+* In the abstract, it is said "We investigate whether or not the
+distributions resemble uniform foreground screens, as commonly
+assumed.". I see several issues with this statement. First of all, the
+word "uniform" is ambiguous. Later in the paper it appears to probably
+mean that it implies there is no differential reddening between the gas
+and the stars. At this point it is not clear in my opinion. The terms
+used in the paper really need to be properly and strictly defined. As it
+is, the paper appears somewhat vague, partly because of that I think.
+Also, "foreground screens" are not commonly assumed. I would go as far
+as saying they besides a handful of specific cases and academic
+exercises, they are nearly never assumed for practical proposes on
+entire galaxies. I believe we have known since the IRAS days that a
+foreground screen cannot be a good assumption in general for entire
+galaxies as this would yield very low dust masses that are not at all in
+line with the estimate from IR observations. And for sure it has fallen
+even more into disuse since the Calzetti+94 paper and the subsequent
+Charlot & Fall+00 model.
+
+We clarify our language in the last paragraph of the Introduction. 
+Foreground screens are commonly assumed by the high-redshift community;
+we expand our explanation in the Introduction.
+
+* Still on the vocabulary, I do not think it is defined anywhere what
+"dust-poor" and "dusty" galaxies are. This sort of thing contributes to
+the vagueness of the paper. The reader does not know what she is really
+looking it. A more quantitative description of the two samples would be
+especially useful. Directly related to this point, another important
+issue I have is the very unclear selection of the sample. I do not think
+the reader would understand why these sample specifically were selected.
+
+We clarify our language in the last paragraph on the Introduction.  The
+sample of low-redshift dust-poor galaxies is included to show that we
+can reproduce the Calzetti result; the samples of dusty galaxies are
+included because we know little about their dust distributions.
+
+* "We often assume that dust grains are distributed as a uniformly thick
+screen between us and the galaxy's stars and gas (Calzetti et al.
+1994).". I do not see where Calzetti would have stated that. What they
+say in the abstract is "The data from the 39 galaxies are compared with
+five models for the geometrical distribution of dust, adopting as
+extinction laws both the Milky Way and the Large Magellanic Cloud laws.
+The commonly used uniform dust screen is included among the models. We
+find that none of the five models is in satisfactory agreement with the
+models". What the authors perhaps mean is that 20 years ago some people
+still considered an uniform dust screen as an acceptable model. I think
+this time is long gone, even though it is sometimes referred to as a
+standard comparison point as it has a very simple link with the optical
+depth.
+
+The abstract has only a small fraction of the content of the paper. 
+Calzetti et al. 1994 has an extended discussion of the uniform screen
+model in sections 5.1 and 6.2.  We clarify our discussion of the uniform
+screen model in the Introduction.
+
+* "If a dusty galaxy's measured Halpha attenuation agreed with the
+prediction from the Calzetti+00 attenuation formula, we might conclude
+that the galaxy has a uniform dust distribution only if we believe that
+the prediction is valid". I think that this statement is not correct.
+First of all, the starburst curve is purely observational. No assumption
+whatsoever on the geometry was made. However, it can be explained by
+certain geometries, such as for instance the one described in the
+Charlot & Fall 2000 model. Perhaps this is what the authors mean?
+
+We clarify our discussion of the uniform screen model in the
+Introduction. k(lambda) is an empirical equation; predictions of
+attenuation values from k(lambda) do assume a dust distribution.
+
+* First paragraph of Sect. 2.2.3. The K98 IR estimator actually assumes
+that the galaxy is totally buried into dust. Therefore, combining the UV
+with the TIR directly can be a dangerous game (though quite common in
+the literature). As UV is detected, galaxies are not that strongly
+attenuated so the assumption does not hold and the dust heating sources
+are not the same anymore, which in turn should change the calibration
+coefficient. Also, the listed assumptions are not enough in my opinion.
+Even if the SFR is constant over 10^8 years, the Halpha and UV+IR SFR
+would not be the same, because of contamination by stars older than 100
+Myr in the UV but not in Halpha. As possible biases in the derivation of
+the SFR would have a direct impact on the results, I suggest that they
+are fully taken into account and properly discussed in the paper. In any
+case, beyond that, assuming in effect that SFR(Halpha)=SFR(UV+TIR) is a
+very strong assumption. If there is a tiny wiggle of the SFR in the last
+few Myr, that is sufficient to throw the different SFR completely off
+from one another. As said just above, the results of this paper are
+sensitive to such effects. I think it is therefore especially important
+that the impact of such variations is discussed in more detail than in a
+lone paragraph in Section 4.
+
+* In section 3, I find very odd to present the results in terms of
+escape fraction, rather than attenuation as is customary. While
+technically they are equivalent quantities, I find that using escape
+fractions is detrimental to the clarity of the paper. I would strongly
+suggest to switch to attenuations.
+
+We disagree.
+
+* Section 3.1. I understand what the authors are trying to do, that is
+testing their method. Which is a very good thing of course. That being
+said, I cannot help but wonder whether the results are really meaningful
+here. If I remember correctly, there is quite a bit of scatter for this
+sample around the IRX-beta relation. What if this scatter is driven by a
+combination of variations in the attenuation curves and variations in
+the age of UV-emitting stellar populations? I think a perhaps more
+convincing test would be to create a mock catalog of galaxies and apply
+that method on it to see whether it can recover the proper parameters.
+As an added bonus, it would be trivial to test whether a variation of
+the SFH (for instance including a recent burst of star formation). I
+think that would be a very convincing test that the proposed method is
+indeed providing good results. Actually at this point I am also a bit
+confused regarding beta. Its computation is described earlier in the
+paper but I do not see it used in practice.
+
+We are interested in reproducing the literature relation for a sample of
+dust-poor galaxies similar to the one studied by Calzetti.  The test
+proposed here is for reproducing the relation assumed by a model.  We do
+not know what the "true" values are for the Lyman break analogs or the
+Calzetti sample.  So while we might be able to say that we reproduce the
+relation assumed by the model, we would not be able to say that the mock
+galaxies reproduce real galaxies.
+
+We use beta only to obtain rest-frame UV luminosities at a common
+wavelength.
+
+* Beginning of Section 4. There is more than just the assumption that
+dusty galaxies follow the starburst law. There is also the assumption
+that all galaxies in a given sample have the same intrinsic UV color I
+think. It is not clear at all to me whether that is actually the case.
+
+* Last paragraph of the conclusion. I doubt ALMA will be used to provide
+direct test of the "uniform screen assumption". Not that it cannot, but
+rather this assumption is known to be invalid for most practical
+purposes. There is an enormous quantity of archival observations
+available for numerous instruments showing the beautifully complex
+interplay between stars and dust in the Milky and in nearby galaxies.
+
+We clarify that ALMA will be a boon to high-redshift galaxies.
+
+* Finally, some general comments. The differential reddening is not
+mentioned in the paper even though that is what the authors aim at
+studying. In her last attenuation law papers, Calzetti defines the
+difference of the attenuation between the stars and the gas in terms of
+differential reddening rather than in terms of escape ratios (that is,
+E(B-V)stars=0.44*E(B-V)gas rather than AVstars=0.44*AVgas). This is an
+important difference as Rv is different between the starburst law
+(Rv=4.05) and the Milky Way law (Rv=3.1). If I remember correctly, that
+can make a noticeable difference when computing A(Halpha)/A(FUV).
+
+We hope our language clarifies this point.  We are only interested in
+the differential reddening if we believe the Calzetti formula applies to
+high-redshift dusty galaxies.  When we discuss whether high-redshift
+galaxies obey or disobey the Calzetti attenuation formula, we include Rv
+in our definition of the attenuation formula, k(lambda). (In short, we
+do not aim to study the differential reddening.)
+
+Some comments on more minor points follow.
+
+* There are sentences between parentheses in the middle of the text. It
+disturbs the reading flow in my opinion. I would suggest to either add
+them as footnotes and to integrate them fully in the rest of the text.
+
+* Please provide a reference for Willman 1. I assume many readers will
+be ignorant of the details of this object, so information should be made
+easy to access for those who are curious to know more about it.
+
+* "The arrangement of dust is often described, oddly, as its geometry".
+I am not sure what is particularly odd in that. But more precisely, what
+is described is the relative arrangement of dust relative to stars as
+this is one of the major parameters that govern the actual impact of
+dust on the emerging radiation.
+
+* "If we want to learn about galaxies, morphology should be a
+wavelength-independent word". Should it? I do not see why. The
+differences in morphologies in different bands are extremely informative
+on the physics of galaxies.
+
+* "An attenuation formula is denoted k(lambda) or k'(lambda)." I do not
+think this statement is useful here. First the term "attenuation
+formula" is extremely vague. Then, unless I am mistaken, k is not used
+in any meaningful way elsewhere in the paper anyway.
+
+* "A low-redshift galaxy [...] underestimates the measured Halpha
+attenuation." Please back this with a reference.
+
+* "Liu+13 find that the dust distribution around ionizing stars
+throughout M83 is clumpy at a spatial scale of 6 pc." Unless I am
+mistaken, this is not at all what they say. Quoting their abstract
+"[...] we conclude that a large diversity of absorber/emitter geometric
+configurations can account for the data, implying a more complex
+physical structure than the classical foreground screen assumption". The
+article barely mentions at all the clumpy distribution.
+
+* "If we choose to think of dust distributions as clumpy [...] 60% of
+the number of clumps surrounding ionizing stars (Calzetti+97a)". Once
+again, I do not see where the mentioned paper cites that number. If it
+is indeed that paper: http://de.arxiv.org/abs/astro-ph/9706121 then the
+word clump is not even mentioned even once in the paper. Please clarify
+this part.
+
+* "if we consider that galaxies have centers and outskirts." That
+statement is odd. Any spatially bounded object has outskirts.
+
+* Price+13 should be Price+14.
+
+* About the correction for the NII contamination, which should be
+metallicity dependent, what about using a mass-metallicity relation for
+instance? That would be far from perfect but certainly better than
+assuming a constant [NII]/Halpha.
+
+* Editorial question, it looks odd that the second author of the paper
+is cited for data provided as "private communication".
+
+* Sect. 2.2.1, second paragraph. Maybe I am misunderstanding what is
+written, but it appears to say that fitting the CE01 templates on the 24
+micron band only will overestimate the 70 and 100 micron fluxes (and
+therefore most likely it will also overestimate the TIR), and that the
+TIR found in the paper is even higher. If it is the case, I find that
+very worrisome. If it is not the case, please clarify this paragraph to
+remove ambiguities.
+
+* The TIR luminosities of the so-called dust-poor and dusty galaxies are
+not that different. This suggests some possible selection effects. This
+aspect should be discussed in detail in the paper.
+
+* The title of Sect. 3.1 is unclear. One would wonder what "relation" is
+considered here.
+
+* Sect. 3.1, it would be useful to specify what exactly is the "low
+redshift IRX-beta relation".
+
+* Last paragraph of Sect. 4. This assumes that the stars and the gas
+follow the same attenuation law. This may or may not be the case.
+Calzetti considers that this is not the case. Also later in that
+paragraph, I may be missing something, but I do not understand why this
+would prove that SFH are correct. Just after the authors rightly mention
+that f(Halpha)/f(Hbeta) is SFH-independent. So this test just does not
+tell us much of anything regarding the SFH I think. Please clarify.
+
+As a final note, here is the assessment by a statistical expert on the
+fitting done in the paper: The choice of regression methodology in Fig 4
+is unclear to me. Why do the orange lines seem constrained to pass
+through the origin? The resulting fit for the top right diagram, for
+example, is clearly poor. Statisticians would recommend that, when
+heuristic (e.g. linear) parametric models fit poorly, that nonparametric
+local regression methods be used to show the true behavior of the
+bivariate relationship. There are various methods -- splines, LOESS,
+kriging (= Gaussian process regression) -- some of which give local
+confidence bands. Several recent texts are available; e.g. K.Takezawa
+`Introduction to Nonparametric Regression'. For implementation in the
+public R statistical software environment, see a tutorial on density
+estimation at http://www2.astro.psu.edu/users/edf/Caltech_2014.
