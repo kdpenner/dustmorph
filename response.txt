@@ -16,7 +16,7 @@ line with the estimate from IR observations. And for sure it has fallen
 even more into disuse since the Calzetti+94 paper and the subsequent
 Charlot & Fall+00 model.
 
-We clarify our language in the last paragraph of the Introduction. 
+We clarify our language in the last paragraph of the Introduction.
 Foreground screens are commonly assumed by the high-redshift community;
 we expand our explanation in the Introduction.
 
@@ -47,10 +47,10 @@ this time is long gone, even though it is sometimes referred to as a
 standard comparison point as it has a very simple link with the optical
 depth.
 
-The abstract has only a small fraction of the content of the paper. 
-Calzetti et al. 1994 has an extended discussion of the uniform screen
-model in sections 5.1 and 6.2.  We clarify our discussion of the uniform
-screen model in the Introduction.
+The abstract has a small fraction of the content of the paper. Calzetti
+et al. 1994 has an extended discussion of the uniform screen model in
+sections 5.1 and 6.2.  We clarify our discussion of the uniform screen
+model in the Introduction.
 
 * "If a dusty galaxy's measured Halpha attenuation agreed with the
 prediction from the Calzetti+00 attenuation formula, we might conclude
@@ -188,12 +188,19 @@ configurations can account for the data, implying a more complex
 physical structure than the classical foreground screen assumption". The
 article barely mentions at all the clumpy distribution.
 
+We clarify our summary of their conclusions.  The abstract has a small
+fraction of the content of the paper.  The clumpy distributions are
+discussed in detail in section 3.2.
+
 * "If we choose to think of dust distributions as clumpy [...] 60% of
 the number of clumps surrounding ionizing stars (Calzetti+97a)". Once
 again, I do not see where the mentioned paper cites that number. If it
 is indeed that paper: http://de.arxiv.org/abs/astro-ph/9706121 then the
 word clump is not even mentioned even once in the paper. Please clarify
 this part.
+
+The referee has an incorrect link.  The paper we cite is: Calzetti, D.
+1997, AJ, 113, 162.
 
 * "if we consider that galaxies have centers and outskirts." That
 statement is odd. Any spatially bounded object has outskirts.
