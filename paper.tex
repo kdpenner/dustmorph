@@ -7,6 +7,7 @@
 %\newcommand{\alephuvha}{\textphnc{\ARaleph}$_{0.66}$}
 %\newcommand{\alephhb}{\textphnc{\ARaleph}$_{\mathrm{H}\beta}$}
 \usepackage{lscape}
+\usepackage{amsmath}
 \newcommand{\alephuv}{f$_{\mathrm{esc}}$(0.16$\,\micron$)}
 \newcommand{\alephha}{f$_{\mathrm{esc}}$(H$\alpha$)}
 \newcommand{\alephuvha}{f$_{\mathrm{esc}}$(0.66$\,\micron$)}
@@ -37,8 +38,8 @@ Tucson, AZ 85719, USA}
 Tucson, AZ 85721, USA}
 \altaffiltext{4}{Laboratoire d'Astrophysique de Marseille, Aix
 Marseille Universit\'e, 13388 Marseille cedex 13, France}
-\altaffiltext{5}{Department of Astronomy, University of California Riverside,
-Riverside, CA 92521, USA}
+\altaffiltext{5}{Department of Physics \& Astronomy, University of California
+Irvine, Irvine, CA 92697, USA}
 \altaffiltext{6}{Space Telescope Science Institute, Baltimore, MD 21218, USA}
 \altaffiltext{7}{Department of Physics \& Astronomy, Texas A\&M University,
 College Station, TX 77843, USA}
@@ -77,11 +78,11 @@ assumption.
 A galaxy's morphology is often defined as its spatial distribution of stars.
 Rest-frame optical images of galaxies show diverse arrangements of
 their stellar components: smooth ellipticals, tightly-wound spirals, clumpy
-disks, barred disks, train-wrecks, fuzzballs, and whatever Willman 1 is.
+disks, barred disks, train-wrecks, fuzzballs, and whatever Willman 1 is
+\citep{willman05,willman11}.
 Little more than spatial extent is known about distributions of dust in dusty
 galaxies
-\citep{younger10,diaz10,simpson15}.  (The arrangement of
-dust is often described, oddly, as its geometry.)  Yet spatial distributions of
+\citep{younger10,diaz10,simpson15}.  Yet spatial distributions of
 all galactic components have intrinsic value.  If we want to learn about
 galaxies, morphology should be a wavelength-independent word.  Surprises
 surely abound: for example, galaxies at $z \sim 0.3$ have dust out to several
@@ -101,12 +102,10 @@ of dust.  When we derive an extinction formula, it is valid for the small area
 surrounding a star in the Milky Way, not the large area containing a mixture of
 stars in distant galaxies.
 
-If we write an equation like this:
-
-\begin{math}
+If we write this equation:
+\begin{equation*}
 L_{\mathrm{emergent}}/L_{\mathrm{intrinsic}} = 10^{-\mathrm{A}/2.5} = 10^{-\mathrm{E(B-V)} k(\lambda)/2.5}
-\end{math}
-
+\end{equation*}
 we assume a uniform screen not because $k(\lambda)$ is solely dependent on
 wavelength, but because $L_{\mathrm{emergent}}/L_{\mathrm{intrinsic}}$ is solely
 dependent on
@@ -141,7 +140,8 @@ dust-poor galaxies is 60\% of the number of clumps surrounding ionizing stars
 
 The discrepancy between the uniform assumption and real dust
 distributions in low-redshift dust-poor galaxies grows even larger if we
-consider that galaxies have centers and outskirts.  A number of studies find
+consider that galaxies have centers and outskirts---that galaxies are not
+point sources.  A number of studies find
 that H$\alpha$ and UV attenuation decrease with increasing radius
 \citep{boissier04,prescott07,munoz09}.  Ionizing stars are surrounded by more
 dust than nonionizing UV-emitting stars; ionizing stars
@@ -214,7 +214,7 @@ UDS, the catalogs have flux densities at 24, 100, 160, 250, 350,
 and 500$\,\micron$.  All flux densities are $\ge 3\sigma$.  We do not use the
 250, 350, and 500$\,\micron$ flux
 densities in the COSMOS and UDS catalogs, to avoid the effects of source
-confusion on PSF fitting.  (Including them changes our results negligibly.)
+confusion on PSF fitting.  Including them changes our results negligibly.
 
 We associate each 100$\,\micron$ source with a 1.6$\,\micron$ ($H$-band) source
 in the
@@ -261,14 +261,14 @@ line flux.  To determine line flux upper limits for these sources, we match each
 the catalogs of: \citet{lefevre04,szokoly04,mignoli05,yamada05,ravikumar07,
 vanzella08,lilly09,balestra10,fadda10,simpson12,kurk13,santini14}; Simpson et
 al. (in prep.); Almaini et al. (in prep.); and
-M. Dickinson (private communication).  (Operationally both the
-100$\,\micron$ and spectroscopic catalogs are matched to the CANDELS catalogs.)
+M. Dickinson (private communication).  Operationally both the
+100$\,\micron$ and spectroscopic catalogs are matched to the CANDELS catalogs.
 If the 100$\,\micron$ source has a spectroscopic redshift that is unconfirmed
 by an uncontaminated grism spectrum, we estimate the widths of the invisible
 Gaussian line profiles from the ratio of integrated flux density to peak
 surface brightness for the region of the direct image surrounding the galaxy.
-(The direct
-image is the image taken as part of the grism observations.)  We then fit
+The direct
+image is the image taken as part of the grism observations.  We then fit
 the same model as above to the 1D spectrum and extract the H$\alpha$ line flux
 uncertainty.  We use $5\sigma$ limits.  We are unable to determine limits for
 galaxies observed by the grism that are undetected in the direct image.  Most
@@ -289,8 +289,8 @@ analogs of common star-forming galaxies at high redshift
 
 We use 24$\,\micron$ flux densities in the \emph{Spitzer} Heritage Archive.  Of
 the 26 sources in \citet{overzier11}, 3 have unreliable 24$\,\micron$ flux
-densities (per the recommendations in the enhanced imaging products quick start
-guide); these sources are excluded.  The remaining 23 galaxies have flux
+densities per the recommendations in the enhanced imaging products quick start
+guide; these sources are excluded.  The remaining 23 galaxies have flux
 densities at
 0.15 and 0.23$\,\micron$ (NUV and FUV bands), from \emph{GALEX} observations.
 H$\alpha$ line
@@ -404,7 +404,7 @@ We must exclude galaxies with active nuclei because fractions of their IR,
 emergent UV, and emergent H$\alpha$ luminosities will be unrelated to newly
 formed massive stars.  We identify 5 AGN hosts among the high-redshift dusty
 galaxies; we use the \citet{donley12} criteria, which are based on mid-IR flux
-densities (which all 3 CANDELS catalogs have).  These criteria will miss some
+densities, which all 3 CANDELS catalogs have.  These criteria will miss some
 AGN hosts \citep{juneau13}.  We accept the contaminants because in some fields
 we lack data---for example, X-ray data---that we could use to identify the
 missed AGN hosts.
@@ -1130,9 +1130,9 @@ We eschew magnitude attenuation in favor of the escape fraction, which
 is the ratio of emergent to intrinsic luminosity.  We define the following
 quantities.
 \begin{itemize}
-\item \alephuv~is the escape fraction at rest-frame 0.16$\,\micron$.  (In
+\item \alephuv~is the escape fraction at rest-frame 0.16$\,\micron$.  In
 relation to A$_{\mathrm{UV}}$,
-f$_{\mathrm{esc}}$(0.16$\,\micron$) = 10$^{-\mathrm{A}_{\mathrm{UV}}/2.5}$.)
+f$_{\mathrm{esc}}$(0.16$\,\micron$) = 10$^{-\mathrm{A}_{\mathrm{UV}}/2.5}$.
 \item \alephha~is the escape fraction of the H$\alpha$ line luminosity.
 \item \alephuvha~is the escape fraction extrapolated from \alephuv~to the
 wavelength of H$\alpha$---the attenuation formula prediction.  For the
@@ -1175,7 +1175,8 @@ H$\beta$ luminosities for the $z \sim 1$ dusty galaxies.  We first apply
 it to a sample of low-redshift dust-poor galaxies with the aim of reproducing
 the \citet{calzetti97b} result.
 
-\subsection{Reproducing the relation for dust-poor galaxies}
+\subsection{Reproducing the relation between escape fractions for dust-poor
+galaxies}
 
 The sample, from \citet{overzier11}, contains galaxies that lie roughly on
 the low-redshift IRX-$\beta$ relation.  This relation is a blunt instrument we
@@ -1186,9 +1187,9 @@ expect them to have dust properties that conform with the properties of
 the galaxies in the \citet{calzetti00} sample.  We calculate \alephha~and
 \alephuv~for each galaxy in the following way.
 \begin{itemize}
-\item \alephuv~from IRX: \alephuv~= ($L_{\mathrm{IR}}$/($1.68\times0.16\times
-L_{\mathrm{0.16}}$)+1)$^{-1}$.  (Equivalent to \alephuv~= [emergent UV
-SFR]/[IR SFR + emergent UV SFR].)
+\item \alephuv~= ($L_{\mathrm{IR}}$/($1.68\times0.16\times
+L_{\mathrm{0.16}}$)+1)$^{-1}$.  This is equivalent to \alephuv~= (emergent UV
+SFR)/(IR SFR + emergent UV SFR).
 %\item \alephuvha~= \alephuv$^{0.33}$.
 \item Following the assumptions in \ref{sfrs}: \alephha~=
 (emergent H$\alpha$ SFR)/(IR SFR + emergent UV SFR).
@@ -1198,10 +1199,10 @@ for the form \alephha~= \alephuv$^{q}$.
 
 The top left panel of Fig. \ref{fha_fuv} shows that \alephha~= \alephuv$^{0.80}$
 for the low-redshift
-dust-poor galaxies.  (If we use the IR and UV luminosities from
-\citealt{overzier11}, \alephha~= \alephuv$^{0.84}$.)  We lack
-uncertainties on any SFRs so we also perform a robust linear regression
-(which requires a fit to the form $\log\,$\alephha~= $q\,\log\,$\alephuv).  It
+dust-poor galaxies.  If we use the IR and UV luminosities from
+\citealt{overzier11}, \alephha~= \alephuv$^{0.84}$.  We lack
+uncertainties on any SFRs so we also perform a robust linear regression,
+which requires a fit to the form $\log\,$\alephha~= $q\,\log\,$\alephuv.  It
 returns a similar result, as does a bootstrap resampling.  We recover a relation
 close to the
 \citet{calzetti97b} relation for similar galaxies, so we have some confidence
@@ -1215,9 +1216,9 @@ method of determining \alephha.
 The top right panel of Fig. \ref{fha_fuv} shows that \alephha~=
 \alephuv$^{0.55}$ for the low-redshift
 dusty galaxies.  We use uncertainties only on the emergent H$\alpha$-derived
-SFR (we treat it as the dependent variable) in the weighted fit.  The relation
+SFR---we treat it as the dependent variable---in the weighted fit.  The relation
 for dust-poor galaxies is seemingly inapplicable to dusty galaxies at
-low redshift.  In \S\ref{subsec:highz} and \ref{sec:discuss} we explain why we
+low redshift.  In \S\ref{subsec:select} and \ref{sec:discuss} we explain why we
 preface `inapplicable' with `seemingly.'
 
 %\begin{figure}[!ht]
@@ -1248,8 +1249,8 @@ galaxies with H$\alpha$-detected SFRs lies between \alephha~= \alephuv$^{0.45}$
 and \alephha~= \alephuv$^{0.66}$.  A survival regression, which incorporates
 H$\alpha$ SFR limits in a fit to the form $\log\,$\alephha~=
 $q\,\log\,$\alephuv, finds $q = 0.47$, as does a simple linear regression using
-only the H$\alpha$-detected SFRs.  (None of the galaxies have limits for both
-the UV and H$\alpha$ SFRs.)  The main effect of including limits in the
+only the H$\alpha$-detected SFRs.  None of the galaxies have limits for both
+the UV and H$\alpha$ SFRs.  The main effect of including limits in the
 regression is to increase the standard error of the sample's best-fit index; a
 marginally different index is a secondary effect.  Table \ref{regress}
 summarizes the relevant quantities for the main fit to each sample of galaxies.
@@ -1287,6 +1288,8 @@ High-z dusty    & 0.549 & 0.008 & 6.6  & 320
 %lower escape fractions than the extrapolation and higher escape fractions than
 %they would in low-redshift dust-poor galaxies.\label{highz}}
 %\end{figure}
+
+\subsection{Issues with the regressions}\label{subsec:select}
 
 The escape fraction relations of dusty galaxies are subject to selection
 effects.  The best-fit relation for the low-redshift dusty galaxies seems to:
@@ -1344,8 +1347,12 @@ an assumption about the attenuation formula.\label{fha_fuv}}}
 
 \section{Discussion}\label{sec:discuss}
 
-If we assume that dusty galaxies obey the \citet{calzetti00} attenuation
-formula, our results indicate that their H$\alpha$ and 0.66$\,\micron$ escape
+If we assume that dusty galaxies:
+\begin{enumerate}
+\item obey the \citet{calzetti00} attenuation formula; and
+\item were to have the same UV spectrum in the absence of dust,
+\end{enumerate}
+our results indicate that their H$\alpha$ and 0.66$\,\micron$ escape
 fractions disagree.  Unlike low-redshift dust-poor galaxies, dusty galaxies
 have \alephha~= \alephuvha$^{1.6}$; like low-redshift dust-poor galaxies,
 dusty galaxies have nonuniform dust distributions.  The relations between
@@ -1394,8 +1401,8 @@ $L_{0.16}$ and $L_{\mathrm{IR}}$ by larger numbers than we do here to derive the
 UV and IR SFRs.  The true UV SFR is 57\% higher and the true IR SFR is 63\%
 higher \citep{madau14}.  The true UV escape fraction is little different;
 because the true total SFR is higher, the true H$\alpha$ escape fraction is
-lower.  (Another scenario is that massive stars stopped forming within the last
-15 Myr.)  Perhaps some of the high-redshift dusty galaxies have
+lower.  Another scenario is that massive stars stopped forming within the last
+15 Myr.  Perhaps some of the high-redshift dusty galaxies have
 complicated star formation histories; the combined effect of deriving correct
 SFRs might lead to lower dispersion.
 
@@ -1403,17 +1410,16 @@ There are few ways to resolve the uncertainties regarding star formation
 histories and the applicability of the \citet{calzetti00} attenuation formula
 to dusty galaxies.  One (partial) way is to use the formula and
 \alephha~to predict the escape fraction of the H$\beta$ luminosity,
-\alephhb.  Both line luminosities are from ionized gas surrounding the same
-stars, so this prediction is immune to an uncertain star formation history.
-The ratio of intrinsic
-H$\alpha$ to H$\beta$ luminosities is 2.86 (under reasonable
-assumptions); with H$\beta$ observations, we can use
+\alephhb.  The ratio of intrinsic
+H$\alpha$ to H$\beta$ luminosities is 2.86 under reasonable
+assumptions; with H$\beta$ observations, we can use
 ($L_{\mathrm{H}\alpha}$/$L_{\mathrm{H}\beta}$)/2.86~=~\alephha/\alephhb~and from this
 determine \alephhb.  If the predicted and determined H$\beta$ escape fractions
 agree, the assumed attenuation formula is probably valid at optical
 wavelengths; the assumed star formation histories are also probably valid.
 The histories are valid because the prediction is history-dependent and the
-determination is history-independent.  If
+determination is history-independent---both line luminosities are from ionized
+gas surrounding the same stars.  If
 the predicted and determined fractions disagree, the attenuation
 formula at optical wavelengths can be different for dusty galaxies
 or their true \alephha~can be different.  The formula can differ due to dust
@@ -1595,7 +1601,7 @@ M., Pope, A., et al.\ 2012, \apj, 759, 28
 Kennicutt, R.~C., Jr., Bendo, G.~J., et al.\ 2007, \apj, 668, 182
 
 \bibitem[Price et al.(2013)]{price13} Price, S.~H., Kriek, M., 
-Brammer, G.~B., et al.\ 2013, arXiv:1310.4177
+Brammer, G.~B., et al.\ 2014, \apj, 788, 86
 
 \bibitem[Ravikumar et al.(2007)]{ravikumar07} Ravikumar, C.~D., Puech, M.,
 Flores, H., et al.\ 2007, \aap, 465, 1099
@@ -1623,6 +1629,12 @@ Dickinson, M., et al.\ 2008, \aap, 478, 83
 
 \bibitem[Weiner et al.(2007)]{weiner07} Weiner, B.~J., Papovich, 
 C., Bundy, K., et al.\ 2007, \apjl, 660, L39
+
+\bibitem[Willman et al.(2011)]{willman11} Willman, B., Geha, M., 
+Strader, J., et al.\ 2011, \aj, 142, 128 
+
+\bibitem[Willman et al.(2005)]{willman05} Willman, B., Blanton, 
+M.~R., West, A.~A., et al.\ 2005, \aj, 129, 2692
 
 \bibitem[Yamada et al.(2005)]{yamada05} Yamada, T., Kodama, T., 
 Akiyama, M., et al.\ 2005, \apj, 634, 861

@@ -85,6 +85,24 @@ sensitive to such effects. I think it is therefore especially important
 that the impact of such variations is discussed in more detail than in a
 lone paragraph in Section 4.
 
+We agree that determinations of star formation rates are fraught with
+uncertainty. Attenuation does not have to decrease with increasing UV
+emission: galaxies may have one set of star forming regions which are
+totally buried and another set which are totally exposed.  Many papers
+discuss in much detail the assumptions made by those who convert
+luminosity to star formation rate.  K98 and the review article by Madau
+& Dickinson, which we cite in section 4, mention many of these same
+issues.
+
+An extended discussion on our part can be arbitrarily complex---for
+example, some in the stellar community might argue that we don't know
+even the evolution of the ionizing luminosity of a simple stellar
+population (Sana et al. 2012); some in the extragalactic community might
+argue that we're extrapolating a total infrared luminosity from two or
+three flux densities.  Our assumptions are strong but we do acknowledge
+them.  In our view these important details have deserved their own
+papers.
+
 * In section 3, I find very odd to present the results in terms of
 escape fraction, rather than attenuation as is customary. While
 technically they are equivalent quantities, I find that using escape
@@ -125,6 +143,8 @@ dusty galaxies follow the starburst law. There is also the assumption
 that all galaxies in a given sample have the same intrinsic UV color I
 think. It is not clear at all to me whether that is actually the case.
 
+We add this assumption to the first paragraph of section 4.
+
 * Last paragraph of the conclusion. I doubt ALMA will be used to provide
 direct test of the "uniform screen assumption". Not that it cannot, but
 rather this assumption is known to be invalid for most practical
@@ -157,9 +177,13 @@ Some comments on more minor points follow.
 disturbs the reading flow in my opinion. I would suggest to either add
 them as footnotes and to integrate them fully in the rest of the text.
 
+Integrated.
+
 * Please provide a reference for Willman 1. I assume many readers will
 be ignorant of the details of this object, so information should be made
 easy to access for those who are curious to know more about it.
+
+Provided.
 
 * "The arrangement of dust is often described, oddly, as its geometry".
 I am not sure what is particularly odd in that. But more precisely, what
@@ -167,18 +191,30 @@ is described is the relative arrangement of dust relative to stars as
 this is one of the major parameters that govern the actual impact of
 dust on the emerging radiation.
 
+We removed this statement.
+
 * "If we want to learn about galaxies, morphology should be a
 wavelength-independent word". Should it? I do not see why. The
 differences in morphologies in different bands are extremely informative
 on the physics of galaxies.
+
+We say that morphology should be a wavelength-independent word.  We do
+not say that morphology itself is independent of wavelength.  In our
+view the community reserves the word morphology for "what we see at
+visible wavelengths."
 
 * "An attenuation formula is denoted k(lambda) or k'(lambda)." I do not
 think this statement is useful here. First the term "attenuation
 formula" is extremely vague. Then, unless I am mistaken, k is not used
 in any meaningful way elsewhere in the paper anyway.
 
+We expanded our discussion of k'(lambda).
+
 * "A low-redshift galaxy [...] underestimates the measured Halpha
 attenuation." Please back this with a reference.
+
+The relevant citations come at the end of the next sentence: Calzetti et
+al. 94 and 97b.
 
 * "Liu+13 find that the dust distribution around ionizing stars
 throughout M83 is clumpy at a spatial scale of 6 pc." Unless I am
@@ -205,15 +241,26 @@ The referee has an incorrect link.  The paper we cite is: Calzetti, D.
 * "if we consider that galaxies have centers and outskirts." That
 statement is odd. Any spatially bounded object has outskirts.
 
+Any spatially bound object has outskirts but they are not always
+considered. We added a sentence.
+
 * Price+13 should be Price+14.
+
+Corrected.
 
 * About the correction for the NII contamination, which should be
 metallicity dependent, what about using a mass-metallicity relation for
 instance? That would be far from perfect but certainly better than
 assuming a constant [NII]/Halpha.
 
+Weiner et al. 2007 have a sample of galaxies with -23 < M_H < -21 for
+which the average correction is roughly constant.  This is the basis for
+our correction.
+
 * Editorial question, it looks odd that the second author of the paper
 is cited for data provided as "private communication".
+
+We don't know how else to cite the data.
 
 * Sect. 2.2.1, second paragraph. Maybe I am misunderstanding what is
 written, but it appears to say that fitting the CE01 templates on the 24
@@ -223,15 +270,27 @@ TIR found in the paper is even higher. If it is the case, I find that
 very worrisome. If it is not the case, please clarify this paragraph to
 remove ambiguities.
 
+We use the CE01 templates for all samples in the paper to be consistent.
+We have presented results based on both our luminosities and the
+luminosities from Overzier et al. 2011.
+
 * The TIR luminosities of the so-called dust-poor and dusty galaxies are
 not that different. This suggests some possible selection effects. This
 aspect should be discussed in detail in the paper.
 
+The UV luminosities are different.  We have discussed the origins of the
+low-redshift samples.
+
 * The title of Sect. 3.1 is unclear. One would wonder what "relation" is
 considered here.
 
+Clarified.
+
 * Sect. 3.1, it would be useful to specify what exactly is the "low
 redshift IRX-beta relation".
+
+We are unsure what the referee means by "exactly."  Our subsequent
+sentences explain the IRX-beta relation.
 
 * Last paragraph of Sect. 4. This assumes that the stars and the gas
 follow the same attenuation law. This may or may not be the case.
@@ -241,7 +300,9 @@ would prove that SFH are correct. Just after the authors rightly mention
 that f(Halpha)/f(Hbeta) is SFH-independent. So this test just does not
 tell us much of anything regarding the SFH I think. Please clarify.
 
-As a final note, here is the assessment by a statistical expert on the
+We have mentioned and clarified these assumptions in the text.
+
+* As a final note, here is the assessment by a statistical expert on the
 fitting done in the paper: The choice of regression methodology in Fig 4
 is unclear to me. Why do the orange lines seem constrained to pass
 through the origin? The resulting fit for the top right diagram, for
@@ -254,3 +315,16 @@ confidence bands. Several recent texts are available; e.g. K.Takezawa
 `Introduction to Nonparametric Regression'. For implementation in the
 public R statistical software environment, see a tutorial on density
 estimation at http://www2.astro.psu.edu/users/edf/Caltech_2014.
+
+The problem with nonparametric regression methods lies in the
+interpretation. We choose to fit through the origin because we want our
+model to lack dust around Ha emitting regions when there is no dust
+around UV emitting regions. A very basic prediction of the attenuation
+formula is that if the escape fraction is 1 at any wavelength it is 1 at
+all wavelengths.  Another basic prediction is that if the escape
+fraction is less than 1 at any wavelength it is less than 1 at all
+wavelengths.
+
+We mention a reason for the poor fit to the low-redshift dusty galaxies
+in section 3.4.  This section existed previously; we divided section 3.3
+into two sections for clarity.
