@@ -47,10 +47,9 @@ this time is long gone, even though it is sometimes referred to as a
 standard comparison point as it has a very simple link with the optical
 depth.
 
-The abstract has a small fraction of the content of the paper. Calzetti
-et al. 1994 has an extended discussion of the uniform screen model in
-sections 5.1 and 6.2.  We clarify our discussion of the uniform screen
-model in the Introduction.
+Calzetti et al. 1994 has an extended discussion of the uniform screen
+model in sections 5.1 and 6.2.  We clarify our discussion of the uniform
+screen model in the Introduction.
 
 * "If a dusty galaxy's measured Halpha attenuation agreed with the
 prediction from the Calzetti+00 attenuation formula, we might conclude
@@ -94,6 +93,15 @@ luminosity to star formation rate.  K98 and the review article by Madau
 & Dickinson, which we cite in section 4, mention many of these same
 issues.
 
+Fig. 2b of Madau & Dickinson 2014 shows negligible contamination to the
+UV luminosity from stars older than 10^8 Myr which were formed during a
+constant SFH.  L_UV/SFR reaches an asymptote, more or less.
+
+We do discuss the pitfalls of assuming that SFR(Halpha)=SFR(UV+IR).  Our
+method may not return relations with optimal dispersions.  We warn that
+this assumption will be unjustified for individual galaxies.  Thankfully
+we have large samples and are interested in average relations.
+
 An extended discussion on our part can be arbitrarily complex---for
 example, some in the stellar community might argue that we don't know
 even the evolution of the ionizing luminosity of a simple stellar
@@ -109,7 +117,10 @@ technically they are equivalent quantities, I find that using escape
 fractions is detrimental to the clarity of the paper. I would strongly
 suggest to switch to attenuations.
 
-We disagree.
+We believe that magnitudes are strange metrics.  A(Ha) = 2.5 is
+deceptive at a glance since we mean to write that we see only 10% of the
+intrinsic luminosity.  We have tried to write this paper for an audience
+comprising novices.
 
 * Section 3.1. I understand what the authors are trying to do, that is
 testing their method. Which is a very good thing of course. That being
@@ -164,11 +175,11 @@ important difference as Rv is different between the starburst law
 (Rv=4.05) and the Milky Way law (Rv=3.1). If I remember correctly, that
 can make a noticeable difference when computing A(Halpha)/A(FUV).
 
-We hope our language clarifies this point.  We are only interested in
-the differential reddening if we believe the Calzetti formula applies to
-high-redshift dusty galaxies.  When we discuss whether high-redshift
-galaxies obey or disobey the Calzetti attenuation formula, we include Rv
-in our definition of the attenuation formula, k(lambda). (In short, we
+We hope our language clarifies this point.  When we discuss whether
+high-redshift galaxies obey or disobey the Calzetti attenuation formula,
+we include Rv in our definition of the attenuation formula, k(lambda).
+We are only interested in the E(B-V) relations if we believe the
+Calzetti formula applies to high-redshift dusty galaxies.  (In short, we
 do not aim to study the differential reddening.)
 
 Some comments on more minor points follow.
@@ -199,9 +210,7 @@ differences in morphologies in different bands are extremely informative
 on the physics of galaxies.
 
 We say that morphology should be a wavelength-independent word.  We do
-not say that morphology itself is independent of wavelength.  In our
-view the community reserves the word morphology for "what we see at
-visible wavelengths."
+not say that morphology itself is independent of wavelength.
 
 * "An attenuation formula is denoted k(lambda) or k'(lambda)." I do not
 think this statement is useful here. First the term "attenuation
@@ -224,9 +233,8 @@ configurations can account for the data, implying a more complex
 physical structure than the classical foreground screen assumption". The
 article barely mentions at all the clumpy distribution.
 
-We clarify our summary of their conclusions.  The abstract has a small
-fraction of the content of the paper.  The clumpy distributions are
-discussed in detail in section 3.2.
+We clarify our summary of their conclusions.  The clumpy distributions
+are discussed in detail in section 3.2.
 
 * "If we choose to think of dust distributions as clumpy [...] 60% of
 the number of clumps surrounding ionizing stars (Calzetti+97a)". Once
@@ -235,8 +243,8 @@ is indeed that paper: http://de.arxiv.org/abs/astro-ph/9706121 then the
 word clump is not even mentioned even once in the paper. Please clarify
 this part.
 
-The referee has an incorrect link.  The paper we cite is: Calzetti, D.
-1997, AJ, 113, 162.
+The paper we cite is: Calzetti, D. 1997, AJ, 113, 162, not the paper at
+the provided link.
 
 * "if we consider that galaxies have centers and outskirts." That
 statement is odd. Any spatially bounded object has outskirts.
@@ -260,7 +268,8 @@ our correction.
 * Editorial question, it looks odd that the second author of the paper
 is cited for data provided as "private communication".
 
-We don't know how else to cite the data.
+We don't know how else to cite the data.  We are publishing the data in
+the tables.
 
 * Sect. 2.2.1, second paragraph. Maybe I am misunderstanding what is
 written, but it appears to say that fitting the CE01 templates on the 24
@@ -289,8 +298,9 @@ Clarified.
 * Sect. 3.1, it would be useful to specify what exactly is the "low
 redshift IRX-beta relation".
 
-We are unsure what the referee means by "exactly."  Our subsequent
-sentences explain the IRX-beta relation.
+Our subsequent sentences explain the IRX-beta relation: the UV escape
+fraction is a function of IRX and an attenuation formula relates the
+escape fraction to beta.
 
 * Last paragraph of Sect. 4. This assumes that the stars and the gas
 follow the same attenuation law. This may or may not be the case.
