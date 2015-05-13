@@ -1,3 +1,9 @@
+We thank the referee for the time they spent on this report.  Instead of
+bolding our changes to the text we include a file named diff_paper.html.
+Blue text is from the first submission; magenta text is from this
+submission.  Please let us know if these color choices are problematic.
+Black text shows the context around the changes.  Our responses follow.
+
 * In the abstract, it is said "We investigate whether or not the
 distributions resemble uniform foreground screens, as commonly
 assumed.". I see several issues with this statement. First of all, the
