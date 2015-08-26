@@ -1,0 +1,491 @@
+> * We clarify our language in the last paragraph of the Introduction.
+> Foreground screens are commonly assumed by the high-redshift
+> community; we expand our explanation in the Introduction.
+> 
+> * Calzetti et al. 1994 has an extended discussion of the uniform
+> screen model in sections 5.1 and 6.2. We clarify our discussion of the
+> uniform screen model in the Introduction.
+> 
+> First of all, I think several clarifications are required here
+> regarding the starburst curve and its relation with the stars-dust
+> geometry.
+> 
+> 1. First and foremost, the starburst law has been derived without any
+> assumption whatsoever on the geometry. From Calzetti 01: "the
+> starburst obscuration curve is a purely empirical result, and its
+> derivation is independent of any assumption about the starburst's
+> population, the dust geometry, or the details of the extinction
+> curve".
+> 
+One sentence quotations are insufficient in conveying the complexity of
+deriving k(lambda) and the assumptions regarding spatial distributions
+of dust that allow a derivation of k(lambda). Here is the paragraph
+before the quoted sentence:
+
+"Although the obscuration curve can be widely applied to UV‐selected
+starbursts, it is not necessarily applicable to systems with different
+stellar population or ISM characteristics. In the case of nonstarburst
+galaxies there is no obvious mechanism for creating a
+foreground‐dust–like geometry. In extreme starbursts such as the ULIRGs,
+the nonapplicability of the obscuration curve has been demonstrated
+observationally (Goldader et al. 2001 and Fig. 7a). In these galaxies,
+the high central concentration of gas and dust is likely to induce more
+extreme geometries than in UV‐selected galaxies and to produce
+combinations of clumpy mixed and foreground distributions. Galaxies
+whose infrared properties are intermediate between the ULIRGs and the
+UV‐selected galaxies will progressively deviate from the dust geometry
+of the latter (Alonso‐Herrero et al. 2001; Förster Schreiber et al.
+2001)."
+
+Here is a paragraph from section 6 of Calzetti et al. 1994, which we
+referred to in our first response:
+
+"Therefore, we will use the quantity tau_B^l as the independent
+parameter in the derivation of the extinction law.  This assumption
+implies that the dust behaves as a uniform screen (models 1 or 3) in
+front of the emitting source.  A clumpy dust model with a low average
+number of clumps along the line of sight, N < 10, gives a nonlinear
+dependence between beta and tau_B^l (see section 5).  A strongly
+nonlinear dependence is excluded by the data and a mild nonlinearity
+would be hidden by the intrinsic spread of the data; in face, the clumpy
+dust model can still be in agreement with the data if N > 10 (see Figs.
+15a-15b).  The assumption of linear dependence between beta and tau_B^l
+allows the minimum number of hypotheses to be introduced."
+
+In light of these paragraphs the quoted sentence has been written with
+carelessness.
+
+> 2. This is because as mentioned in the previous citation, the curve
+> has been directly and empirically derived from the observations. At
+> the same time it also means the attenuation curve naturally integrates
+> all the complexity of the stars-dust geometry in such galaxies: "the
+> obscuration curve for the stellar continuum [...] fold[s] into a
+> single functional form a variety of effects: [...] the geometrical
+> distribution of the dust relative to the emitters.".
+> 
+By "the curve" does the referee mean k(lambda)?
+
+If so: we are explicit when separating k(lambda) from the ratio of
+L_emergent / L_intrinsic. The *latter* assumes a dust distribution.
+Calzetti 01 has many similar statements to the one we make.  The first
+sentence of section 2.1:
+
+"A pointlike source (a star or an active galactic nucleus [AGN]) behind
+a screen of dust is the simplest source/dust geometry, and equation (1)
+has the solution..."
+
+The discussion after equations 8a and 8b:
+
+"Equations (8a) and (8b) fold into a single functional form a variety of
+effects: extinction proper, scattering, and the geometrical distribution
+of the dust relative to the emitters. It is derived from the spatially
+integrated colors of the entire stellar population in the starburst and
+represents the 'net' obscuration of the population itself. As mentioned
+above, the obscuration curve has mainly an absorption component because
+the effects of scattering are averaged out."
+
+By "geometrical distribution of the dust relative to the emitters,"
+Calzetti means that k(lambda) includes the extent of the effect of
+scattering *into* the line of sight. From section 4.1:
+
+"In addition, dust absorption is the main process that removes light
+from the line of sight (Calzetti et al. 1995b); when large galactic
+regions are observed, light scattered by dust out of the line of sight
+compensates, on average, that scattered into the line of sight."
+
+We also refer to the first paragraph we quote in response to point (1).
+
+> 3. In turn, this is why we can apply the curve *as if* it was a
+> foreground screen, for the exclusive purpose of attenuation
+> correction.
+> 
+If the referee remains unconvinced, section 2.1 of Calzetti et al. 1995
+contains equation 4:
+
+"F(lambda)^i = F(lambda)^(obs) 10^(0.4 E(B-V)_c k(lambda)"
+
+and this paragraph:
+
+"Equation (4) assumes that the dust responsible for the obscuration is
+located in a foreground screen. This approximation may seem inadequate
+for starburst nuclei, where hot stars can be heavily embedded in dust.
+However, from the analysis of the galaxies in S2, CKS found that the
+foreground screen model is compatible with the observational data, while
+other models, among them the homogeneous mixture of dust and stars, fail
+to reproduce the data."
+
+> 4. But then, this does not imply a "uniform foreground screen"
+> geometry, and the assumption of a "uniform foreground screen" is in
+> general incompatible with the starburst law. In reality if anything,
+> the starburst law suggests a rather more complex geometry. If one
+> considers the Charlot & Fall 00 model, it can be understood as higher
+> attenuation young stellar clusters (where the geometry can be
+> approximated by a clumpy dust screen, but only there) surrounded by
+> the general lower attenuation clumpy ISM. As UV-emitting stars from
+> disrupted clusters are also present in the ISM, the resulting global
+> dust-stars geometry is complex and made of at least two separate
+> regions. See also Fig. 8 of Calzetti 01 for an illustration.
+> 
+Calzetti et al. 1994, Calzetti et al. 1995, and Calzetti 2001 state that
+if you consider L_emergent/L_intrinsic to be "the starburst law" the
+galaxies in their samples do have dust distributions that are uniform
+foreground screens.  Here are excerpts of the discussion around fig. 8
+of Calzetti 2001:
+
+"This section describes a dust model that attempts to reconcile two
+apparently contradictory facts: (1) stars in starbursts are on average a
+factor of ~2 less reddened than the ionized gas (eq. [9]), and (2) both
+stars and ionized gas are affected by the same foreground‐like dust
+distribution (Fig. 6). A schematic representation of a dust/star/gas
+configuration that can at the same time account for both effects is
+shown in Figure 8. Stars are born within optically thick molecular
+clouds, and the short‐lived, most massive stars remain closely
+associated with their parental cloud and the gas they ionize for their
+entire lifetime (e.g., Walborn et al. 1999). These stars and their
+surrounding gas will be generally highly attenuated. As the starburst
+population evolves, the inside of the region of star formation becomes
+depleted of dust (Calzetti, Kinney, & Storchi‐Bergmann 1996)."
+
+"The evacuated (clumpy) dust will act as a foreground‐like distribution
+for both the gas (also at the edges of the region) and the central stars
+(Fig. 8; Calzetti et al. 1996; Witt & Gordon 2000; Gordon et al. 2000);
+however, the ionized gas will be more obscured than the stars, because
+of its spatial location and closer association with the dust (Calzetti
+1997a). This gas is more likely to contribute to the nebular emission
+observed at UV‐optical wavelengths than the gas in molecular clouds,
+because of its milder obscuration. In the presence of multiple
+generations of starburst populations, the long‐lived, nonionizing stars
+have time to 'diffuse' into regions of lower dust density (Calzetti et
+al. 1994; Charlot & Fall 2000; Granato et al. 2000), as their native
+clusters are disrupted by evaporation or by the host galaxy’s
+gravitational field (Leisawitz & Hauser 1988; Kim, Morris, & Lee 1999;
+Tremonti et al. 2001)."
+
+We mention and discuss the contradiction between the uniform foreground
+screen hypothesis and the existence of "two separate regions" in the
+introduction.
+
+> 5. When Calzetti talks about a clumpy foreground screen she is only
+> talking about the central cluster, not the galaxy as a whole, which
+> has a much more complex geometry.
+> 
+The apertures that Calzetti et al. use are large enough to encompass
+extended regions of galaxies.  The conclusions regarding dust
+distributions apply to these regions.
+
+> I think the authors' confusion about a purported "uniform foreground
+> screen" geometry in star-forming galaxies shows up in particular with
+> this statement "(1) a uniform screen is a screen equally thick between
+> a region with stars which ionize gas and a region with stars which
+> emit in the UV and do not ionize gas". If we are to take this
+> definition then the non-ionizing populations would not be attenuated
+> at all, which in general is not reasonable at all as the ISM contains
+> dust. When we look at an entire galaxy (as is the case at high
+> redshift), a foreground screen geometry does not hold.
+> 
+We do not follow---why would the stars which emit in the UV and do not
+ionize the gas have an escape fraction of 1?  A uniform screen is a
+screen equally thick; we imply nothing about the thickness of the screen
+by stating that it is uniform.
+
+> Actually with just A(Halpha) and A(UV) there is a degeneracy between
+> the shape of the attenuation curve for the stellar continuum and the
+> differential reddening between the gas and the continuum: a change of
+> A(Halpha)/A(UV) could be due to either.
+> 
+We restate the referee's point to ensure that we understand.  The
+relationship between f(Ha)_esc and f(UV)_esc is determined by two
+quantities: (1) the intrinsic dependence of f(Ha)_esc on f(UV)_esc due
+to wavelength; and (2) whether the observed dependence differs from this
+intrinsic dependence because ionizing stars are surrounded by more dust
+than stars which emit in the UV but do not ionize the gas.
+
+If our restatement of the referee's point is correct we refer to the
+first two paragraphs of the discussion section.  We state our hypothesis
+in section 3: "Our hypothesis is that the Ha and 0.66um escape fractions
+agree-that dusty galaxies have uniform dust distributions."  In the
+discussion section we write: "Our conclusion regarding the uniformity of
+dust distributions depends on the assumed attenuation formula. We cannot
+reject our hypothesis."  These two sentences demonstrate we write so
+much about uniform foreground screens in the introduction.
+
+> * We clarify our language in the last paragraph on the Introduction.
+> The sample of low-redshift dust-poor galaxies is included to show that
+> we can reproduce the Calzetti result; the samples of dusty galaxies
+> are included because we know little about their dust distributions
+> 
+> * "(2) a dust-poor galaxy generally has high values of UV and Halpha
+> escape fractions; and (3) a dusty galaxy is selected from an IR image
+> and generally has low values of UV and Halpha escape fractions."
+> 
+> This is still very vague. What are "high values of UV"? What is a
+> "high Halpha escape fraction"? In other words, what are the exact
+> sample selection criteria? What are the samples characteristics and
+> how do they compare? The use of "generally" is not reassuring here.
+> 
+Sample selection criteria have always been in section 2.  The final
+paragraph of section 2.1.1, titled "Sample of dusty galaxies at z >
+0.7," is:
+
+"To summarize, our high-redshift sample contains galaxies with: (1)
+detected emission at 100um; (2) detected emission at 1.6um; and (3)
+spectroscopically-determined redshifts at 0.7 < z < 1.5."
+
+Our low-redshift samples come from Overzier et al. 2009 and Hwang &
+Geller 2013.  We have added a few sentences on the selection of each
+sample.
+
+> * "We clarify our discussion of the uniform screen model in the
+> Introduction. k(lambda) is an empirical equation; predictions of
+> attenuation values from k(lambda) do assume a dust distribution." ;
+> "If we write this equation: Lemergent 
+> /Lintrinsic=10^−A/2.5=−E(B−V)k(λ)/2.5 we assume a uniform screen not 
+> because k(λ) is solely dependent on wavelength, but because Lemergent 
+> /Lintrinsic is solely dependent on wavelength. In an illustrative 
+> sense Lemergent/Lintrinsic is an attenuation formula convolved with a
+> spatial distribution of dust."
+> 
+> The way this is formulated is very unclear. We apply the formula *as
+> if* it was a foreground screen. But in reality the trick is that the
+> effect of the geometry is folded into k. But then k may have been
+> determined purely empirically without any kind of assumption on the
+> dust geometry as was the case for the starburst curve for example.
+> 
+We hope the referee is convinced by our response to points (1)-(5).
+
+> 
+> > > > > > > > > > > > > 
+> * We agree that determinations of star formation rates are fraught
+> with uncertainty. [...] In our view these important details have
+> deserved their own papers.
+> 
+> I am not suggesting writing a dedicated article on the impact of the
+> SFH. But the precision and accuracy of the results of this article
+> depend directly and strongly on the way the SFR are derived and what
+> the actual impact of the SFH is. This is not just a nice added side
+> result, which would justify a somewhat lighter treatment. This is at
+> the core of this paper and therefore this and other possible biases
+> and uncertainties must be addressed appropriately and with rigor. This
+> is a major issue in my opinion.
+> 
+> In addition one cannot help but wonder if, rather than UV+IR, the SFR
+> were determined from SED modeling. With the wealth of data available
+> for these fields I can only imagine that this should easily be
+> feasible and would probably provide better estimates of the UV
+> attenuation (there is a minor but real trend of IRX with age for
+> instance). This would certainly alleviate some of the concerns with
+> the solidity of the results of the paper. As such the results do not
+> appear solid and there are suspicions that they may be significantly
+> affected by systematic biases. As a side note, uncertainties need to
+> be fully included and propagated. It is difficult to compare different
+> A(Halpha)/A(UV) without know what are the error bars.
+> 
+> > > > > > > > > > > > > 
+> * We believe that magnitudes are strange metrics. A(Ha) = 2.5 is
+> deceptive at a glance since we mean to write that we see only 10% of
+> the intrinsic luminosity. We have tried to write this paper for an
+> audience comprising novices.
+> 
+> Magnitudes must be one of the first notions learned in an introductory
+> undergraduate astronomy course. If the audience does not understand
+> magnitudes, they will not understand what the paper is about. I
+> reiterate that this is detrimental to the clarity of the paper. At the
+> very minimum magnitudes must be indicated. Escape fractions can be
+> indicated alongside if really necessary.
+> 
+> > > > > > > > > > > > > 
+> * We are interested in reproducing the literature relation for a
+> sample of dust-poor galaxies similar to the one studied by Calzetti.
+> The test proposed here is for reproducing the relation assumed by a
+> model. We do not know what the "true" values are for the Lyman break
+> analogs or the Calzetti sample. So while we might be able to say that
+> we reproduce the relation assumed by the model, we would not be able
+> to say that the mock galaxies reproduce real galaxies.
+> 
+> To be clear, I do not consider that retrieving approximately the
+> A(Halpha)/A(UV) ratio found by Calzetti+97b to be a proof that these
+> galaxies necessarily follow a starburst attenuation law. This ratio is
+> chiefly sensitive to the differential reddening between the gas and
+> the stellar continuum. The shape of the continuum attenuation law
+> could be different as it plays only a second order role when
+> considering only these wavelength (the situation is of course
+> different when looking at the 2200 Å bump).
+> 
+> What needs to be tested here is really whether the A(Halpha)/A(UV)
+> ratio provided by this method is reliable. And for this, the advantage
+> of a mock catalog is precisely that one knows exactly what is
+> underneath. As what is underneath is user-controlled, it makes it
+> fairly easy to test the impact of certain assumptions, such as that on
+> the SFH as I mentioned in my previous report. The modus operandi for
+> creating a mock catalogs and extract information is fairly
+> straightforward. Fit the SED of the galaxies. Take the best fits (at
+> this point you know the exact physical parameters for these best fit).
+> Inject random noise into the SED of the best-fit models. Fit again
+> these best-fits. Compute A(UV) and A(Hα) following the methods in the
+> paper and compare with the true values you know from the initial best
+> fit. Rinse and repeat this a large number of times. Are the estimated
+> values, or at least their ratio consistent with the actual values?
+> 
+> Another issue with the current test is that even if it is proven to
+> work on a low-redshift sample, that does not mean it will work at high
+> redshift. The properties of the galaxies can be different. What works
+> in one case may not work in the other.
+> 
+> > > > > > > > > > > > > 
+> * We use beta only to obtain rest-frame UV luminosities at a common
+> wavelength.
+> 
+> This is needlessly confusing I think. The UV luminosity alone at an
+> agreed-upon wavelength is sufficient in that case.
+> 
+> > > > > > > > > > > > > 
+> * We clarify that ALMA will be a boon to high-redshift galaxies.
+> 
+> My remark was not that it would not be. My remark was that there is a
+> large body of literature acknowledging the complexity of dust
+> distribution in galaxies. Therefore as mentioned earlier, except for
+> the young generation of stars still in their birth clusters, one
+> cannot reasonably approximate the dust in an entire galaxy to be
+> distributed as a uniform foreground screen.
+> 
+> > > > > > > > > > > > > 
+> * We hope our language clarifies this point. When we discuss whether
+> high-redshift galaxies obey or disobey the Calzetti attenuation
+> formula, we include Rv in our definition of the attenuation formula,
+> k(lambda). We are only interested in the E(B-V) relations if we
+> believe the Calzetti formula applies to high-redshift dusty galaxies.
+> (In short, we do not aim to study the differential reddening.)
+> 
+> The issue is that if the continuum curve is used for the gas, then
+> this is not the Calzetti law anymore. This is something else. If one
+> considers that the gas undergoes a foreground-screen-like attenuation,
+> the continuum curve should not be used for it. Calzetti originally
+> intended the gas extinction to be corrected with a Milky Way law. This
+> is directly linked to what I mentioned earlier, the assumption of a
+> foreground screen is made only for the gas in the central cluster, not
+> for the stellar continuum for the galaxy in general, hence the
+> different obscuration curves.
+> 
+> > > > > > > > > > > > > 
+> * We say that morphology should be a wavelength-independent word. We
+> do not say that morphology itself is independent of wavelength.
+> 
+> I understood the original intent. But clearly we have been able to
+> learn about galaxy even though the perceived morphology can sometimes
+> change with time. Maybe galaxy "type" would be closer to what the
+> authors really intended to convey rather?
+> 
+> > > > > > > > > > > > > 
+> * We expanded our discussion of k'(lambda).
+> 
+> Unless I am mistaken, I only see the addition of a formula and a brief
+> description of it. Hence my initial remark still stands, k is barely
+> used anywhere else in the text. It could be done without at this
+> point.
+> 
+> > > > > > > > > > > > > 
+> * The relevant citations come at the end of the next sentence:
+> Calzetti et al. 94 and 97b.
+> 
+> I still do not understand this paragraph. At the moment it reads: "The
+> Calzetti et al. (2000) formula predicts its Hα escape fraction; the
+> prediction overestimates the measured Hα escape fraction. The galaxy's
+> regions with > 10 M⊙ stars, which ionize gas, have more dust than its
+> regions with less massive stars that emit in the UV and leave the gas
+> unionized (Calzetti et al. 1994; Calzetti 1997b). While the
+> discrepancy in amounts of dust does not invalidate the screen part of
+> our assumption, it does invalidate the uniform part."
+> 
+> It is very unclear what is actually meant here. Against which
+> reference would Calzetti+00 underpredict an Halpha attenuation? This
+> needs to be made clear and back with adequate citations. And it does
+> not predict a uniform screen either. Rather as I mentioned earlier a
+> possible geometry giving rise to a starburst law should be a clumpy
+> screen in the central cluster attenuating the gas (as is mentioned in
+> the following paragraph actually), plus a clumpy ISM attenuating the
+> rest of the galaxy. I do not understand why the screen part is so much
+> insisted upon, especially that the required geometry for a starburst
+> law is more complex than that.
+> 
+> > > > > > > > > > > > > 
+> * Any spatially bound object has outskirts but they are not always
+> considered. We added a sentence.
+> 
+> It still sounds very odd and it is heavier to read now. What about
+> just saying that because of radial attenuation gradients the uniform
+> distribution does not hold at a scale of an entire galaxy? In fact it
+> should even be the starting point of the introduction. Galaxies are
+> extended and have a complex dust-stars geometry, which is why we
+> cannot simply apply the well-known MW/LMC/SMC curves combined with a
+> naive assumption on the geometry. But thankfully, looking at the shape
+> of the attenuation law and at the differential reddening between
+> ionized gas and the stellar continuum, we can attempt to say something
+> about the stars-dust geometry of galaxies. But then, if the complexity
+> of the ISM is (rightfully) acknowledged, why is the "uniform
+> foreground dust screen" assumption insisted upon so much in the first
+> half of the introduction.
+> 
+> > > > > > > > > > > > > 
+> * Weiner et al. 2007 have a sample of galaxies with -23 < M_H < -21
+> for which the average correction is roughly constant. This is the
+> basis for our correction.
+> 
+> And what are the properties of this sample? Are there really good
+> reason to believe that the findings of Weiner+07 are directly
+> applicable to this sample. The justification appears too light,
+> especially after the warning that "The ratio of [N II] to Hα line
+> fluxes depends on gas-phase metallicity so these values may be
+> incorrect for some star-forming galaxies. The values will be correct
+> for a significant fraction of galaxies in our sample if the sample has
+> a distribution of gas-phase metallicity similar to that of
+> low-redshift galaxies (Kauffmann et al. 2003).". As we do not know the
+> metallicity distributions from the paper, the reader cannot assess
+> whether this is reasonable.
+> 
+> > > > > > > > > > > > > 
+> * We use the CE01 templates for all samples in the paper to be
+> consistent. We have presented results based on both our luminosities
+> and the luminosities from Overzier et al. 2011.
+> 
+> I do not think this answers my concerns. The CE01 templates may be
+> valid for some samples but not others. Using them for all samples
+> ensures in no way that the biases would be similar. But even then,
+> systematic biases will have a direct impact on the estimate of the
+> derived quantities: both A(UV) and A(Halpha) will be affected but in a
+> different way. Hence a bias on the results. Once again, this could be
+> checked with mock catalogs as described earlier for instance.
+> 
+> > > > > > > > > > > > > 
+> * The UV luminosities are different. We have discussed the origins of
+> the low-redshift samples.
+> 
+> I easily find galaxies with broadly similar LUV and LIR. For instance
+> 30.987125/-8.132919 and 186.816464/19.906459 (LUV: 2.9e8/2.2e8 LIR:
+> 8.5e10/7.1e10). This comes back to the issue I mentioned earlier. The
+> selection criteria are unclear. The samples need to be characterized
+> and justified.
+> 
+> > > > > > > > > > > > > 
+> * Our subsequent sentences explain the IRX-beta relation: the UV
+> escape fraction is a function of IRX and an attenuation formula
+> relates the escape fraction to beta.
+> 
+> I know what the IRX-beta relation is. The question is what the
+> qualifier "low-redshift" really refers to exactly. Are we talking
+> about the Meurer relation? The Overzier relation? One of the
+> uncountable relations published in the literature? And what would be
+> the difference with a "high-redshift" IRX-beta relation?
+> 
+> > > > > > > > > > > > > 
+> * We have mentioned and clarified these assumptions in the text.
+> 
+> The last paragraph is still very unclear. "One (partial) way is to use
+> the formula and fesc(Hα) to predict the escape fraction of the Hβ
+> luminosity, fesc (Hβ).". What "formula" are we talking about here? It
+> could be anything, really. Also why not comparing Halpha from both
+> methods rather than Halpha to Hbeta? Fig. 2 is just as confusing. "We
+> determine fesc (Hβ) using fesc(Hα) and the ratios of Hα and Hβ
+> luminosities.". Really, the attenuation of the same line needs to be
+> considered with a clear description how each of them has been
+> computed. For instance: "A(Halpha) from the Balmer decrement versus
+> A(Halpha) from fesc(Halpha)=fesc(UV)^0.55, and fesc(UV) from IRX". 
