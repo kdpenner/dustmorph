@@ -233,7 +233,9 @@ spectroscopically-determined redshifts at 0.7 < z < 1.5."
 
 Our low-redshift samples come from Overzier et al. 2009 and Hwang &
 Geller 2013.  We have added a few sentences on the selection of each
-sample.
+sample.  We use the word "generally" because the samples are not
+dichotomous. We do not set arbitrary limits on the UV and Ha escape
+fractions for dusty or dust-poor galaxies.
 
 > * "We clarify our discussion of the uniform screen model in the
 > Introduction. k(lambda) is an empirical equation; predictions of
@@ -254,7 +256,7 @@ sample.
 We hope the referee is convinced by our response to points (1)-(5).
 
 > 
-> > > > > > > > > > > > > 
+> > > > > > > > > > > > > > 
 > * We agree that determinations of star formation rates are fraught
 > with uncertainty. [...] In our view these important details have
 > deserved their own papers.
@@ -280,7 +282,7 @@ We hope the referee is convinced by our response to points (1)-(5).
 > be fully included and propagated. It is difficult to compare different
 > A(Halpha)/A(UV) without know what are the error bars.
 > 
-> > > > > > > > > > > > > 
+> > > > > > > > > > > > > > 
 > * We believe that magnitudes are strange metrics. A(Ha) = 2.5 is
 > deceptive at a glance since we mean to write that we see only 10% of
 > the intrinsic luminosity. We have tried to write this paper for an
@@ -293,7 +295,7 @@ We hope the referee is convinced by our response to points (1)-(5).
 > very minimum magnitudes must be indicated. Escape fractions can be
 > indicated alongside if really necessary.
 > 
-> > > > > > > > > > > > > 
+> > > > > > > > > > > > > > 
 > * We are interested in reproducing the literature relation for a
 > sample of dust-poor galaxies similar to the one studied by Calzetti.
 > The test proposed here is for reproducing the relation assumed by a
@@ -331,14 +333,14 @@ We hope the referee is convinced by our response to points (1)-(5).
 > redshift. The properties of the galaxies can be different. What works
 > in one case may not work in the other.
 > 
-> > > > > > > > > > > > > 
+> > > > > > > > > > > > > > 
 > * We use beta only to obtain rest-frame UV luminosities at a common
 > wavelength.
 > 
 > This is needlessly confusing I think. The UV luminosity alone at an
 > agreed-upon wavelength is sufficient in that case.
 > 
-> > > > > > > > > > > > > 
+> > > > > > > > > > > > > > 
 > * We clarify that ALMA will be a boon to high-redshift galaxies.
 > 
 > My remark was not that it would not be. My remark was that there is a
@@ -348,7 +350,7 @@ We hope the referee is convinced by our response to points (1)-(5).
 > cannot reasonably approximate the dust in an entire galaxy to be
 > distributed as a uniform foreground screen.
 > 
-> > > > > > > > > > > > > 
+> > > > > > > > > > > > > > 
 > * We hope our language clarifies this point. When we discuss whether
 > high-redshift galaxies obey or disobey the Calzetti attenuation
 > formula, we include Rv in our definition of the attenuation formula,
@@ -366,7 +368,7 @@ We hope the referee is convinced by our response to points (1)-(5).
 > for the stellar continuum for the galaxy in general, hence the
 > different obscuration curves.
 > 
-> > > > > > > > > > > > > 
+> > > > > > > > > > > > > > 
 > * We say that morphology should be a wavelength-independent word. We
 > do not say that morphology itself is independent of wavelength.
 > 
@@ -375,7 +377,7 @@ We hope the referee is convinced by our response to points (1)-(5).
 > change with time. Maybe galaxy "type" would be closer to what the
 > authors really intended to convey rather?
 > 
-> > > > > > > > > > > > > 
+> > > > > > > > > > > > > > 
 > * We expanded our discussion of k'(lambda).
 > 
 > Unless I am mistaken, I only see the addition of a formula and a brief
@@ -383,7 +385,7 @@ We hope the referee is convinced by our response to points (1)-(5).
 > used anywhere else in the text. It could be done without at this
 > point.
 > 
-> > > > > > > > > > > > > 
+> > > > > > > > > > > > > > 
 > * The relevant citations come at the end of the next sentence:
 > Calzetti et al. 94 and 97b.
 > 
@@ -407,7 +409,7 @@ We hope the referee is convinced by our response to points (1)-(5).
 > insisted upon, especially that the required geometry for a starburst
 > law is more complex than that.
 > 
-> > > > > > > > > > > > > 
+> > > > > > > > > > > > > > 
 > * Any spatially bound object has outskirts but they are not always
 > considered. We added a sentence.
 > 
@@ -425,7 +427,7 @@ We hope the referee is convinced by our response to points (1)-(5).
 > foreground dust screen" assumption insisted upon so much in the first
 > half of the introduction.
 > 
-> > > > > > > > > > > > > 
+> > > > > > > > > > > > > > 
 > * Weiner et al. 2007 have a sample of galaxies with -23 < M_H < -21
 > for which the average correction is roughly constant. This is the
 > basis for our correction.
@@ -442,7 +444,7 @@ We hope the referee is convinced by our response to points (1)-(5).
 > metallicity distributions from the paper, the reader cannot assess
 > whether this is reasonable.
 > 
-> > > > > > > > > > > > > 
+> > > > > > > > > > > > > > 
 > * We use the CE01 templates for all samples in the paper to be
 > consistent. We have presented results based on both our luminosities
 > and the luminosities from Overzier et al. 2011.
@@ -455,7 +457,7 @@ We hope the referee is convinced by our response to points (1)-(5).
 > different way. Hence a bias on the results. Once again, this could be
 > checked with mock catalogs as described earlier for instance.
 > 
-> > > > > > > > > > > > > 
+> > > > > > > > > > > > > > 
 > * The UV luminosities are different. We have discussed the origins of
 > the low-redshift samples.
 > 
@@ -465,7 +467,7 @@ We hope the referee is convinced by our response to points (1)-(5).
 > selection criteria are unclear. The samples need to be characterized
 > and justified.
 > 
-> > > > > > > > > > > > > 
+> > > > > > > > > > > > > > 
 > * Our subsequent sentences explain the IRX-beta relation: the UV
 > escape fraction is a function of IRX and an attenuation formula
 > relates the escape fraction to beta.
@@ -476,7 +478,7 @@ We hope the referee is convinced by our response to points (1)-(5).
 > uncountable relations published in the literature? And what would be
 > the difference with a "high-redshift" IRX-beta relation?
 > 
-> > > > > > > > > > > > > 
+> > > > > > > > > > > > > > 
 > * We have mentioned and clarified these assumptions in the text.
 > 
 > The last paragraph is still very unclear. "One (partial) way is to use
