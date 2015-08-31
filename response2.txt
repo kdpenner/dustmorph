@@ -52,9 +52,6 @@ dust model can still be in agreement with the data if N > 10 (see Figs.
 15a-15b).  The assumption of linear dependence between beta and tau_B^l
 allows the minimum number of hypotheses to be introduced."
 
-In light of these paragraphs the quoted sentence has been written with
-carelessness.
-
 > 2. This is because as mentioned in the previous citation, the curve
 > has been directly and empirically derived from the observations. At
 > the same time it also means the attenuation curve naturally integrates
@@ -255,8 +252,6 @@ fractions for dusty or dust-poor galaxies.
 > 
 We hope the referee is convinced by our response to points (1)-(5).
 
-> 
-> > > > > > > > > > > > > > 
 > * We agree that determinations of star formation rates are fraught
 > with uncertainty. [...] In our view these important details have
 > deserved their own papers.
@@ -270,6 +265,9 @@ We hope the referee is convinced by our response to points (1)-(5).
 > and uncertainties must be addressed appropriately and with rigor. This
 > is a major issue in my opinion.
 > 
+We have added a figure showing the dispersion in f_esc(0.16um) and
+f_esc(Ha).
+
 > In addition one cannot help but wonder if, rather than UV+IR, the SFR
 > were determined from SED modeling. With the wealth of data available
 > for these fields I can only imagine that this should easily be
@@ -282,7 +280,24 @@ We hope the referee is convinced by our response to points (1)-(5).
 > be fully included and propagated. It is difficult to compare different
 > A(Halpha)/A(UV) without know what are the error bars.
 > 
-> > > > > > > > > > > > > > 
+SED modeling requires assumptions about: (1) the dependence of k on
+wavelength; and (2) the spatial distribution of dust---whether or not
+L_emergent / L_intrinsic is solely a function of wavelength, among many
+other quantities. The SFRs from SED modeling are subject to these
+assumptions.  A comparison of SFRs from SED modeling to SFRs from SFH
+assumptions adds parameters that could be responsible for any
+discrepancies.
+
+For example, we argue that using the Calzetti formula for assumption (1)
+may be unjustified.  If we were to find that SFRs from SED modeling
+disagreed with SFRs from SFR(UV)+SFR(IR), we might have input the
+incorrect attenuation formula when calculating the SFRs from SED
+modeling.  One of our co-authors, Janine Pforr, is working on a paper
+comparing SFRs from SED modeling to SFRs from other methods.
+
+Uncertainties have always been included and propagated in the tables and
+figures.  They are unavailable for the Overzier sample.
+
 > * We believe that magnitudes are strange metrics. A(Ha) = 2.5 is
 > deceptive at a glance since we mean to write that we see only 10% of
 > the intrinsic luminosity. We have tried to write this paper for an
@@ -295,7 +310,11 @@ We hope the referee is convinced by our response to points (1)-(5).
 > very minimum magnitudes must be indicated. Escape fractions can be
 > indicated alongside if really necessary.
 > 
-> > > > > > > > > > > > > > 
+We disagree that this is detrimental to the clarity of the paper; the
+choice of magnitudes or escape fractions must be a personal one.
+Magnitudes have always been indicated on the right and top axes of the
+figures.
+
 > * We are interested in reproducing the literature relation for a
 > sample of dust-poor galaxies similar to the one studied by Calzetti.
 > The test proposed here is for reproducing the relation assumed by a
@@ -332,15 +351,18 @@ We hope the referee is convinced by our response to points (1)-(5).
 > work on a low-redshift sample, that does not mean it will work at high
 > redshift. The properties of the galaxies can be different. What works
 > in one case may not work in the other.
-> 
-> > > > > > > > > > > > > > 
+
+
 > * We use beta only to obtain rest-frame UV luminosities at a common
 > wavelength.
 > 
 > This is needlessly confusing I think. The UV luminosity alone at an
 > agreed-upon wavelength is sufficient in that case.
 > 
-> > > > > > > > > > > > > > 
+We do not follow.  What does the referee mean by "agreed-upon"
+wavelength? Every galaxy is at a different redshift; we fit for beta to
+estimate a rest-frame luminosity at 0.16um.
+
 > * We clarify that ALMA will be a boon to high-redshift galaxies.
 > 
 > My remark was not that it would not be. My remark was that there is a
@@ -350,7 +372,12 @@ We hope the referee is convinced by our response to points (1)-(5).
 > cannot reasonably approximate the dust in an entire galaxy to be
 > distributed as a uniform foreground screen.
 > 
-> > > > > > > > > > > > > > 
+A large body of literature acknowledging the complexity of dust
+distributions exists for *low-redshift dust-poor* galaxies.  Whether or
+not dust distributions for high-redshift dusty galaxies are similar,
+more complex, or more simple is a question to be answered with ALMA
+observations.
+
 > * We hope our language clarifies this point. When we discuss whether
 > high-redshift galaxies obey or disobey the Calzetti attenuation
 > formula, we include Rv in our definition of the attenuation formula,
@@ -368,7 +395,10 @@ We hope the referee is convinced by our response to points (1)-(5).
 > for the stellar continuum for the galaxy in general, hence the
 > different obscuration curves.
 > 
-> > > > > > > > > > > > > > 
+We agree that Calzetti uses the extinction curve of the Milky Way to
+calculate Ha escape fractions.  We hope our response to the referee's
+points (1)-(5) suffices.
+
 > * We say that morphology should be a wavelength-independent word. We
 > do not say that morphology itself is independent of wavelength.
 > 
@@ -377,7 +407,8 @@ We hope the referee is convinced by our response to points (1)-(5).
 > change with time. Maybe galaxy "type" would be closer to what the
 > authors really intended to convey rather?
 > 
-> > > > > > > > > > > > > > 
+No, we are purposeful in our use of the word 'morphology.'
+
 > * We expanded our discussion of k'(lambda).
 > 
 > Unless I am mistaken, I only see the addition of a formula and a brief
@@ -385,7 +416,10 @@ We hope the referee is convinced by our response to points (1)-(5).
 > used anywhere else in the text. It could be done without at this
 > point.
 > 
-> > > > > > > > > > > > > > 
+We use k to explain what we mean by "attenuation formula."  An
+introduction of k is necessary now to distinguish between L_emergent /
+L_intrinsic and k itself.
+
 > * The relevant citations come at the end of the next sentence:
 > Calzetti et al. 94 and 97b.
 > 
@@ -409,7 +443,24 @@ We hope the referee is convinced by our response to points (1)-(5).
 > insisted upon, especially that the required geometry for a starburst
 > law is more complex than that.
 > 
-> > > > > > > > > > > > > > 
+Against the reference of Calzetti et al. (1994, 2000) and Calzetti
+(1997b).  The first two sentences of our paragraph are:
+
+"The uniform screen assumption is unrealistic.  A low-redshift galaxy
+with a high emergent UV luminosity and a low IR luminosity---a dust-poor
+galaxy---has a high UV escape fraction."
+
+The Calzetti formula predicts an Ha escape fraction for the UV escape
+fraction--- that is, plug in the wavelength of Ha for a galaxy with a
+given UV escape fraction and you'll find that the predicted Ha escape
+fraction is greater than the measured Ha escape fraction.
+
+Our discussion of the uniform foreground screen motivates our
+hypothesis: "Our hypothesis is that the Ha and 0.66um escape fractions
+agree-that dusty galaxies have uniform dust distributions."
+
+> 
+> > > > > > > > > > > > > > > > > > > > > 
 > * Any spatially bound object has outskirts but they are not always
 > considered. We added a sentence.
 > 
@@ -427,7 +478,7 @@ We hope the referee is convinced by our response to points (1)-(5).
 > foreground dust screen" assumption insisted upon so much in the first
 > half of the introduction.
 > 
-> > > > > > > > > > > > > > 
+> > > > > > > > > > > > > > > > > > > > > 
 > * Weiner et al. 2007 have a sample of galaxies with -23 < M_H < -21
 > for which the average correction is roughly constant. This is the
 > basis for our correction.
@@ -444,7 +495,7 @@ We hope the referee is convinced by our response to points (1)-(5).
 > metallicity distributions from the paper, the reader cannot assess
 > whether this is reasonable.
 > 
-> > > > > > > > > > > > > > 
+> > > > > > > > > > > > > > > > > > > > > 
 > * We use the CE01 templates for all samples in the paper to be
 > consistent. We have presented results based on both our luminosities
 > and the luminosities from Overzier et al. 2011.
@@ -457,7 +508,7 @@ We hope the referee is convinced by our response to points (1)-(5).
 > different way. Hence a bias on the results. Once again, this could be
 > checked with mock catalogs as described earlier for instance.
 > 
-> > > > > > > > > > > > > > 
+> > > > > > > > > > > > > > > > > > > > > 
 > * The UV luminosities are different. We have discussed the origins of
 > the low-redshift samples.
 > 
@@ -467,7 +518,7 @@ We hope the referee is convinced by our response to points (1)-(5).
 > selection criteria are unclear. The samples need to be characterized
 > and justified.
 > 
-> > > > > > > > > > > > > > 
+> > > > > > > > > > > > > > > > > > > > > 
 > * Our subsequent sentences explain the IRX-beta relation: the UV
 > escape fraction is a function of IRX and an attenuation formula
 > relates the escape fraction to beta.
@@ -478,7 +529,7 @@ We hope the referee is convinced by our response to points (1)-(5).
 > uncountable relations published in the literature? And what would be
 > the difference with a "high-redshift" IRX-beta relation?
 > 
-> > > > > > > > > > > > > > 
+> > > > > > > > > > > > > > > > > > > > > 
 > * We have mentioned and clarified these assumptions in the text.
 > 
 > The last paragraph is still very unclear. "One (partial) way is to use
