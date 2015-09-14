@@ -1420,10 +1420,34 @@ $L_{0.16}$ and $L_{\mathrm{IR}}$ by larger numbers than we do here to derive the
 UV and IR SFRs.  The true UV SFR is 57\% higher and the true IR SFR is 63\%
 higher \citep{madau14}.  The true UV escape fraction is little different;
 because the true total SFR is higher, the true H$\alpha$ escape fraction is
-lower.  Another scenario is that massive stars stopped forming within the last
+lower.  Fig. \ref{spread} exemplifies the spread of true escape fractions that
+could contribute to a given escape fraction.  The spread is imprecise for three
+reasons:
+\begin{enumerate}
+\item \citet{madau14} calculate conversion factors between luminosities and
+star formation rates at 0.15$\,\micron$ rather than 0.16$\,\micron$.  They
+assume a history of constant star formation rate to get factors as a function
+the duration of a star formation episode.
+\item \citet{madau14} use the models of \citet{conroy10} to calculate these
+conversion factors.  The conversion factor between $L_{\mathrm{IR}}$ and
+IR-derived SFR is a function of the UV escape fraction as well as the duration
+of the star formation episode: SFR(IR)/$L_{\mathrm{IR}} = \mathrm{function}
+[\mathrm{duration}, f_{\mathrm{esc}}(0.16\,\micron)]$.  We calculate the spread
+using the conversion factor for a fixed UV escape fraction.
+\item The \citet{kennicutt98} conversion factors for $L_{0.16}$ and
+$L_{\mathrm{IR}}$ are valid at different durations of the star formation
+episode.
+\end{enumerate}
+Another scenario is that massive stars stopped forming within the last
 15 Myr.  Perhaps some of the high-redshift dusty galaxies have
 complicated star formation histories; the combined effect of deriving correct
 SFRs might lead to lower dispersion.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[scale=0.5]{spread_hauv_age.eps}
+\caption{\label{spread}}
+\end{figure}
 
 There are few ways to resolve the uncertainties regarding star formation
 histories and the applicability of the \citet{calzetti00} attenuation formula
@@ -1538,6 +1562,9 @@ Storchi-Bergmann, T.\ 1994, \apj, 429, 582
 
 \bibitem[Chary \& Elbaz(2001)]{chary01} Chary, R., \& Elbaz, D.\ 2001, \apj,
 556, 562
+
+\bibitem[Conroy \& Gunn(2010)]{conroy10} Conroy, C., \& Gunn, J.~E.\ 2010, \apj,
+712, 833
 
 \bibitem[D{\'{\i}}az-Santos et al.(2010)]{diaz10} D{\'{\i}}az-Santos, T.,
 Charmandaris, V., Armus, L., et al.\ 2010, \apj, 723, 993

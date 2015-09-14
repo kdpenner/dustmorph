@@ -265,8 +265,14 @@ We hope the referee is convinced by our response to points (1)-(5).
 > and uncertainties must be addressed appropriately and with rigor. This
 > is a major issue in my opinion.
 > 
-We have added a figure showing the dispersion in f_esc(0.16um) and
-f_esc(Ha).
+We added a figure showing the dispersion in f_esc(0.16um) and f_esc(Ha)
+for a number of assumptions.  We cannot determine the "actual impact of
+the SFH" because we lack knowledge of the histories of these galaxies. 
+As we mention in the paper if the histories are very complex we have to
+model them galaxy by galaxy.  We make no claim that we have the correct
+escape fractions for individual galaxies; we claim that we have the
+correct *average* relation between escape fractions for a sample of
+galaxies.
 
 > In addition one cannot help but wonder if, rather than UV+IR, the SFR
 > were determined from SED modeling. With the wealth of data available
@@ -351,8 +357,8 @@ figures.
 > work on a low-redshift sample, that does not mean it will work at high
 > redshift. The properties of the galaxies can be different. What works
 > in one case may not work in the other.
-
-
+> 
+> 
 > * We use beta only to obtain rest-frame UV luminosities at a common
 > wavelength.
 > 
@@ -459,8 +465,6 @@ Our discussion of the uniform foreground screen motivates our
 hypothesis: "Our hypothesis is that the Ha and 0.66um escape fractions
 agree-that dusty galaxies have uniform dust distributions."
 
-> 
-> > > > > > > > > > > > > > > > > > > > > 
 > * Any spatially bound object has outskirts but they are not always
 > considered. We added a sentence.
 > 
@@ -478,7 +482,6 @@ agree-that dusty galaxies have uniform dust distributions."
 > foreground dust screen" assumption insisted upon so much in the first
 > half of the introduction.
 > 
-> > > > > > > > > > > > > > > > > > > > > 
 > * Weiner et al. 2007 have a sample of galaxies with -23 < M_H < -21
 > for which the average correction is roughly constant. This is the
 > basis for our correction.
@@ -495,7 +498,6 @@ agree-that dusty galaxies have uniform dust distributions."
 > metallicity distributions from the paper, the reader cannot assess
 > whether this is reasonable.
 > 
-> > > > > > > > > > > > > > > > > > > > > 
 > * We use the CE01 templates for all samples in the paper to be
 > consistent. We have presented results based on both our luminosities
 > and the luminosities from Overzier et al. 2011.
@@ -508,7 +510,6 @@ agree-that dusty galaxies have uniform dust distributions."
 > different way. Hence a bias on the results. Once again, this could be
 > checked with mock catalogs as described earlier for instance.
 > 
-> > > > > > > > > > > > > > > > > > > > > 
 > * The UV luminosities are different. We have discussed the origins of
 > the low-redshift samples.
 > 
@@ -518,7 +519,6 @@ agree-that dusty galaxies have uniform dust distributions."
 > selection criteria are unclear. The samples need to be characterized
 > and justified.
 > 
-> > > > > > > > > > > > > > > > > > > > > 
 > * Our subsequent sentences explain the IRX-beta relation: the UV
 > escape fraction is a function of IRX and an attenuation formula
 > relates the escape fraction to beta.
@@ -529,7 +529,6 @@ agree-that dusty galaxies have uniform dust distributions."
 > uncountable relations published in the literature? And what would be
 > the difference with a "high-redshift" IRX-beta relation?
 > 
-> > > > > > > > > > > > > > > > > > > > > 
 > * We have mentioned and clarified these assumptions in the text.
 > 
 > The last paragraph is still very unclear. "One (partial) way is to use
