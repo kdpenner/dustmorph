@@ -267,12 +267,19 @@ We hope the referee is convinced by our response to points (1)-(5).
 > 
 We added a figure showing the dispersion in f_esc(0.16um) and f_esc(Ha)
 for a number of assumptions.  We cannot determine the "actual impact of
-the SFH" because we lack knowledge of the histories of these galaxies. 
-As we mention in the paper if the histories are very complex we have to
-model them galaxy by galaxy.  We make no claim that we have the correct
-escape fractions for individual galaxies; we claim that we have the
-correct *average* relation between escape fractions for a sample of
-galaxies.
+the SFH" because we lack knowledge of the histories of these galaxies;
+we have no calibrator for the truth of an SFH. As we mention in the
+paper we would have a calibrator if we had Hb line luminosities.  These
+line luminosities would allow us to plot f_esc(Ha) determined from SFH
+assumptions vs. f_esc(Ha) determined from the Balmer decrement and
+extinction or attenuation assumptions.
+
+A second point is that if one believes the histories are very complex we
+have to model them galaxy by galaxy.  We make no claim that we have the
+correct escape fractions for individual galaxies; we claim that, if one
+assumes that a galaxy's instantaneous SFR has equaled its prolonged SFR
+for at least 10^8 yr, we have the correct *average* relation between
+escape fractions for a sample of galaxies.
 
 > In addition one cannot help but wonder if, rather than UV+IR, the SFR
 > were determined from SED modeling. With the wealth of data available
@@ -352,13 +359,26 @@ figures.
 > paper and compare with the true values you know from the initial best
 > fit. Rinse and repeat this a large number of times. Are the estimated
 > values, or at least their ratio consistent with the actual values?
-> 
+> > >
+We agree that we must test whether our assumptions are valid.  We hope
+the referee is convinced by our point above (and in the paper) about Hb
+line luminosities.  The test we propose is *directly* applicable to
+*these* galaxies; the test proposed by the referee requires that the
+model successfully and uniquely reproduce UV, IR, and Ha flux densities
+using a combination of star formation histories, dust distributions, and
+k(lambda)'s.  Such a model comparison is beyond the scope of our paper.
+
+
 > Another issue with the current test is that even if it is proven to
 > work on a low-redshift sample, that does not mean it will work at high
 > redshift. The properties of the galaxies can be different. What works
 > in one case may not work in the other.
 > 
-> 
+We agree.  This is why we write that "there are no evolutionary
+connections between the low- and high-redshift galaxy samples; we aim
+only to reproduce the Calzetti (1997b) result with our nonstandard
+method of determining f_esc(Ha)."
+
 > * We use beta only to obtain rest-frame UV luminosities at a common
 > wavelength.
 > 
@@ -482,6 +502,9 @@ agree-that dusty galaxies have uniform dust distributions."
 > foreground dust screen" assumption insisted upon so much in the first
 > half of the introduction.
 > 
+We hope the referee is convinced by the other parts of this response.
+
+
 > * Weiner et al. 2007 have a sample of galaxies with -23 < M_H < -21
 > for which the average correction is roughly constant. This is the
 > basis for our correction.
@@ -497,7 +520,18 @@ agree-that dusty galaxies have uniform dust distributions."
 > low-redshift galaxies (Kauffmann et al. 2003).". As we do not know the
 > metallicity distributions from the paper, the reader cannot assess
 > whether this is reasonable.
-> 
+> > >
+We cannot measure the gas-phase metallicity distribution of the
+high-redshift galaxies with the grism data.  We think one value for all
+galaxies in our sample is the best approach of the many unjustified
+approaches. The value we use comes from Weiner et al. 2007 because the
+average for the massive galaxies in their sample and the average for the
+low-redshift sample agree.  The Weiner et al. sample is of galaxies
+observed in DEEP2.
+
+The mass-metallicity relation is also an average.  Compare Figs. 7 and 8
+of Zahid et al. 2014.
+
 > * We use the CE01 templates for all samples in the paper to be
 > consistent. We have presented results based on both our luminosities
 > and the luminosities from Overzier et al. 2011.
@@ -510,6 +544,10 @@ agree-that dusty galaxies have uniform dust distributions."
 > different way. Hence a bias on the results. Once again, this could be
 > checked with mock catalogs as described earlier for instance.
 > 
+We hope our response above suffices.  We reiterate that we present the
+results of regressions using both L_IRs from CE01 templates and L_IRs
+from Overzier et al.
+
 > * The UV luminosities are different. We have discussed the origins of
 > the low-redshift samples.
 > 
@@ -519,6 +557,10 @@ agree-that dusty galaxies have uniform dust distributions."
 > selection criteria are unclear. The samples need to be characterized
 > and justified.
 > 
+L_UV of 30.987125/-8.132919 is 3.5e10 +- 2.9e8; L_UV of
+186.816462/19.906459 is 8.5e8 +- 2.2e8.  We hope our response above
+suffices; the samples are not dichotomous.
+
 > * Our subsequent sentences explain the IRX-beta relation: the UV
 > escape fraction is a function of IRX and an attenuation formula
 > relates the escape fraction to beta.
