@@ -359,7 +359,7 @@ figures.
 > paper and compare with the true values you know from the initial best
 > fit. Rinse and repeat this a large number of times. Are the estimated
 > values, or at least their ratio consistent with the actual values?
-> > >
+> 
 We agree that we must test whether our assumptions are valid.  We hope
 the referee is convinced by our point above (and in the paper) about Hb
 line luminosities.  The test we propose is *directly* applicable to
@@ -520,7 +520,7 @@ We hope the referee is convinced by the other parts of this response.
 > low-redshift galaxies (Kauffmann et al. 2003).". As we do not know the
 > metallicity distributions from the paper, the reader cannot assess
 > whether this is reasonable.
-> > >
+> 
 We cannot measure the gas-phase metallicity distribution of the
 high-redshift galaxies with the grism data.  We think one value for all
 galaxies in our sample is the best approach of the many unjustified
@@ -571,6 +571,8 @@ suffices; the samples are not dichotomous.
 > uncountable relations published in the literature? And what would be
 > the difference with a "high-redshift" IRX-beta relation?
 > 
+We added a parenthetical statement.
+
 > * We have mentioned and clarified these assumptions in the text.
 > 
 > The last paragraph is still very unclear. "One (partial) way is to use
@@ -582,4 +584,17 @@ suffices; the samples are not dichotomous.
 > luminosities.". Really, the attenuation of the same line needs to be
 > considered with a clear description how each of them has been
 > computed. For instance: "A(Halpha) from the Balmer decrement versus
-> A(Halpha) from fesc(Halpha)=fesc(UV)^0.55, and fesc(UV) from IRX". 
+> A(Halpha) from fesc(Halpha)=fesc(UV)^0.55, and fesc(UV) from IRX".
+> 
+The Balmer decrement does not give f_esc(Ha) [or A(Ha)].  It gives
+f_esc(Ha)/f_esc(Hb) [or A(Ha)-A(Hb)].  The first sentence of the
+paragraph reveals what we mean by "formula":
+
+"There are few ways to resolve the uncertainties regarding star
+formation histories and the applicability of the Calzetti et al. 2000
+attenuation formula to dusty galaxies.  One (partial) way is to use the
+formula and f_esc(Ha) to predict the escape fraction of the Hb
+luminosity, f_esc(Hb)."
+
+The "formula" in sentence 2 refers to the "Calzetti et al. 2000
+attenuation formula" in sentence 1.

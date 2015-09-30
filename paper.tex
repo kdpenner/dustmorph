@@ -1199,7 +1199,8 @@ the \citet{calzetti97b} result.
 galaxies}
 
 The sample, from \citet{overzier11}, contains galaxies that lie roughly on
-the low-redshift IRX-$\beta$ relation.  This relation is a blunt instrument we
+the low-redshift IRX-$\beta$ relation (rederived in the same paper).  This
+relation is a blunt instrument we
 use to determine whether or not galaxies obey an attenuation formula at UV
 wavelengths; \alephuv~is a function of IRX and an attenuation formula relates
 \alephuv~to $\beta$.  Since these galaxies lie on the relation, we
@@ -1413,8 +1414,8 @@ the relation for low-redshift dust-poor galaxies.
 
 The dispersion about the best-fit relation for high-redshift dusty galaxies
 is large, yet it is susceptible
-to our possibly invalid assumption that a galaxy's instantaneous SFR has,
-for at least $10^{8}$ yr, equaled its prolonged SFR.  For example, if most
+to our possibly invalid assumption that a galaxy's SFR has been
+constant for at least $10^{8}$ yr.  For example, if most
 massive stars formed over 15 Myr instead of 300 Myr, we should multiply
 $L_{0.16}$ and $L_{\mathrm{IR}}$ by larger numbers than we do here to derive the
 UV and IR SFRs.  The true UV SFR is 57\% higher and the true IR SFR is 63\%
@@ -1425,15 +1426,13 @@ could contribute to a given escape fraction.  The spread is imprecise for three
 reasons:
 \begin{enumerate}
 \item \citet{madau14} calculate conversion factors between luminosities and
-star formation rates at 0.15$\,\micron$ rather than 0.16$\,\micron$.  They
-assume a history of constant star formation rate to get factors as a function
-the duration of a star formation episode.
+star formation rates at 0.15$\,\micron$ rather than 0.16$\,\micron$.
 \item \citet{madau14} use the models of \citet{conroy10} to calculate these
 conversion factors.  The conversion factor between $L_{\mathrm{IR}}$ and
 IR-derived SFR is a function of the UV escape fraction as well as the duration
 of the star formation episode: SFR(IR)/$L_{\mathrm{IR}} = \mathrm{function}
 [\mathrm{duration}, f_{\mathrm{esc}}(0.16\,\micron)]$.  We calculate the spread
-using the conversion factor for a fixed UV escape fraction.
+using the conversion factor for the given UV escape fraction.
 \item The \citet{kennicutt98} conversion factors for $L_{0.16}$ and
 $L_{\mathrm{IR}}$ are valid at different durations of the star formation
 episode.
@@ -1446,7 +1445,14 @@ SFRs might lead to lower dispersion.
 \begin{figure}[!ht]
 \centering
 \includegraphics[scale=0.5]{spread_hauv_age.eps}
-\caption{\label{spread}}
+\caption{The spread of true escape fractions that could contribute to
+a given escape fraction if a galaxy's SFR has been constant for a
+duration different from $10^{8}$ yr.  We assign the input
+$f_{\mathrm{esc}}$ values to the conversion factors
+between luminosity and SFR in \citet{kennicutt98}.  The UV and IR conversion
+factors change as the duration of the star formation episode varies \citep{madau14}.
+The durations for the points shown here range from $2\times10^{7}$ to
+$1.5\times10^{10}$ yr.\label{spread}}
 \end{figure}
 
 There are few ways to resolve the uncertainties regarding star formation

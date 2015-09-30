@@ -106,7 +106,7 @@ ax1.plot(rangeuvfescs, rangehafescs, marker = 'o', color = 'k', \
 linestyle = 'None')
 
 input = mlines.Line2D(uvfescs, hafescs, marker = 'o', color = color2, \
-linestyle = 'None', label = r'input f$_{esc}$', markeredgecolor = color2)
+linestyle = 'None', label = r'given f$_{esc}$', markeredgecolor = color2)
 
 ax1.add_line(input)
 
@@ -125,7 +125,7 @@ handles, labels = ax1.get_legend_handles_labels()
 extra = mlines.Line2D([], [], color = 'k', marker = 'o', linestyle = 'None')
 
 handles.append(extra)
-labels.append('output f$_{esc}$ for a different duration\nof a star formation history')
+labels.append('true f$_{esc}$ for a different duration\nof a star formation episode')
 
 handdict = {extra: HandlerLine2D(numpoints = 1), \
 input: HandlerLine2D(numpoints = 1)}
