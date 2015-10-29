@@ -528,8 +528,9 @@ average for the massive galaxies in their sample and the average for the
 low-redshift sample agree.  The Weiner et al. sample is of galaxies
 observed in DEEP2.
 
-The mass-metallicity relation is also an average.  Compare Figs. 7 and 8
-of Zahid et al. 2014.
+The mass-metallicity relation is also an average from galaxies with
+significant scatter in metallicity at a given mass.  Compare Figs. 7 and
+8 of Zahid et al. 2014.
 
 > * We use the CE01 templates for all samples in the paper to be
 > consistent. We have presented results based on both our luminosities
