@@ -203,7 +203,7 @@ in section 3: "Our hypothesis is that the Ha and 0.66um escape fractions
 agree-that dusty galaxies have uniform dust distributions."  In the
 discussion section we write: "Our conclusion regarding the uniformity of
 dust distributions depends on the assumed attenuation formula. We cannot
-reject our hypothesis."  These two sentences demonstrate we write so
+reject our hypothesis."  These two sentences demonstrate why we write so
 much about uniform foreground screens in the introduction.
 
 > * We clarify our language in the last paragraph on the Introduction.
@@ -230,9 +230,10 @@ spectroscopically-determined redshifts at 0.7 < z < 1.5."
 
 Our low-redshift samples come from Overzier et al. 2009 and Hwang &
 Geller 2013.  We have added a few sentences on the selection of each
-sample.  We use the word "generally" because the samples are not
-dichotomous. We do not set arbitrary limits on the UV and Ha escape
-fractions for dusty or dust-poor galaxies.
+sample, and a plot showing IR vs. UV luminosity.  We use the word
+"generally" because the samples are not dichotomous. We do not set
+arbitrary limits on the UV and Ha escape fractions for dusty or
+dust-poor galaxies.
 
 > * "We clarify our discussion of the uniform screen model in the
 > Introduction. k(lambda) is an empirical equation; predictions of
@@ -368,7 +369,6 @@ model successfully and uniquely reproduce UV, IR, and Ha flux densities
 using a combination of star formation histories, dust distributions, and
 k(lambda)'s.  Such a model comparison is beyond the scope of our paper.
 
-
 > Another issue with the current test is that even if it is proven to
 > work on a low-redshift sample, that does not mean it will work at high
 > redshift. The properties of the galaxies can be different. What works
@@ -503,7 +503,6 @@ agree-that dusty galaxies have uniform dust distributions."
 > half of the introduction.
 > 
 We hope the referee is convinced by the other parts of this response.
-
 
 > * Weiner et al. 2007 have a sample of galaxies with -23 < M_H < -21
 > for which the average correction is roughly constant. This is the

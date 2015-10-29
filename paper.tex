@@ -63,7 +63,7 @@ interpretation of this result for dust-poor $z \sim 0$ galaxies is that regions
 with ionizing stars have more dust than regions with nonionizing UV-emitting
 stars.  Dust distributions for these galaxies are nonuniform.  The
 interpretation of the overestimates for dusty galaxies at both redshifts is
-less clear.  If the attenuation formula is inapplicable to these galaxies,
+less clear.  If the Calzetti attenuation formula is inapplicable to these galaxies,
 perhaps the disagreements are unphysical; perhaps dust distributions in
 these galaxies are uniform.  If the attenuation formula does apply, then dusty
 galaxies have nonuniform dust distributions; the distributions are more
@@ -149,7 +149,7 @@ at large radii have less dust than ionizing stars at small radii, and similarly
 for nonionizing UV-emitting stars.
 
 We know little about dust distributions in low-redshift dusty galaxies, which
-have high IR luminosities and low-to-high emergent UV luminosities.  Their
+have high IR luminosities and wide-ranging emergent UV luminosities.  Their
 IR emitting regions span a range of sizes, from sub- to several kpc
 \citep{diaz10}.  Measuring a size is hard enough; imaging a distribution is
 even harder.  If a dusty galaxy's measured H$\alpha$ escape fraction agreed with
@@ -187,8 +187,10 @@ For this paper we assume a cosmology with $H_{0} = 70$ km s$^{-1}$ Mpc $^{-1}$,
 $\Omega_{\mathrm{m}} = 0.3$, and $\Omega_{\Lambda} = 0.7$.  Our terminology
 is: (1) a \emph{uniform} screen is a screen equally thick between a region with
 stars which ionize gas and a region with stars which emit in the UV and do not
-ionize gas; (2) a \emph{dust-poor} galaxy generally has high values of UV and
-H$\alpha$ escape fractions; and (3) a \emph{dusty} galaxy is selected from an IR
+ionize gas; (2) a \emph{dust-poor} galaxy is selected from a UV image and
+generally has high values of UV and
+H$\alpha$ escape fractions; and (3) a \emph{dusty} galaxy is selected from a
+mid- or far-IR
 image and generally has low values of UV and H$\alpha$ escape fractions.  The
 samples of dust-poor and dusty galaxies are not
 dichotomous.  More details are in the following section.
@@ -256,15 +258,17 @@ line complex, we fit a linear model to the continuum and Gaussian profiles to
 the emission lines and extract the H$\alpha$ line flux.  The uncertainty on the
 line flux comes from the covariance matrix times the fit's reduced $\chi^{2}$.
 We replace $< 5\sigma$ H$\alpha$ line fluxes with limits.  We multiply the line
-fluxes and limits by 1.1 as an aperture correction.
+fluxes and limits by 1.1, the aperture correction.
 
 Some sources will be at $0.7 < z < 1.5$ but will not have visible H$\alpha$
 line flux.  To determine line flux upper limits for these sources, we match each
 100$\,\micron$ source to a source with a spectroscopic redshift in
-the catalogs of: \citet{lefevre04,szokoly04,mignoli05,yamada05,ravikumar07,
-vanzella08,lilly09,balestra10,fadda10,simpson12,kurk13,santini14}; Simpson et
-al. (in prep.); Almaini et al. (in prep.); and
-M. Dickinson (private communication).  Operationally both the
+the catalogs of:
+\citet{lefevre04,szokoly04,mignoli05,ravikumar07,vanzella08,
+balestra10,fadda10,kurk13,santini14}; and M. Dickinson (private communication)
+for GOODS-S;
+\citet{yamada05,simpson12}; Simpson et al. (in prep.); and
+Almaini et al. (in prep.) for UDS; and \citet{lilly09} for COSMOS.  Operationally both the
 100$\,\micron$ and spectroscopic catalogs are matched to the CANDELS catalogs.
 If the 100$\,\micron$ source has a spectroscopic redshift that is unconfirmed
 by an uncontaminated grism spectrum, we estimate the widths of the invisible
@@ -312,7 +316,8 @@ multiply the line fluxes by 1.67 as a fiber-aperture correction
 
 We also apply our method to a sample of low-redshift dusty galaxies, which have
 relatively unknown dust properties.  \citet{hwang13} collate, for low-redshift
-dust-obscured galaxies (DOGs) and a control sample: flux densities at
+dust-obscured galaxies (DOGs) and a control sample: flux densities ($S_{\nu}$
+units) at
 9, 12, 22, 25, 60, 100, and 140$\,\micron$, from \emph{IRAS}, \emph{AKARI}, and
 \emph{WISE} observations; 0.15 and 0.23$\,\micron$ flux densities, from
 \emph{GALEX} observations; and H$\alpha$ line fluxes, from SDSS observations.
@@ -340,8 +345,10 @@ galaxies in our samples.
 
 We estimate a total IR luminosity (8--1000$\,\micron$; $L_{\mathrm{IR}}$) for
 each galaxy.  We redshift the \citet{chary01} template spectral energy
-distributions (SEDs) to the distance of each galaxy.  If the galaxy has one
-measured IR flux density, we find the SED that most closely matches that flux
+distributions (SEDs) to the distance of each galaxy.  Each template SED has
+an IR luminosity.  If the galaxy has one
+measured flux density at a rest-frame wavelength between 8 and 1000$\,\micron$,
+we find the redshifted SED that most closely matches that flux
 density and multiply the IR luminosity of the SED by the ratio between actual
 and predicted flux densities.  If the galaxy has two or more measured IR flux
 densities, we introduce a multiplicative factor $f$ for each SED.  We find the
@@ -405,7 +412,18 @@ $\chi^{2}$.
 We estimate an emergent UV luminosity or a
 limit at rest-frame 0.16$\,\micron$ for each galaxy using its redshift and
 the power-law fit to the rest-frame UV flux densities.  We refer to the
-luminosity as $0.16 \times L_{0.16}$.
+luminosity as $0.16 \times L_{0.16}$.  Fig. \ref{lir_luv} shows the IR and UV
+luminosities for all galaxies in our samples.  We emphasize that we use
+the adjective ``dusty'' because the average galaxy in the sample has a lower
+UV luminosity and a higher IR luminosity than does the average galaxy in the
+``dust-poor'' sample.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[scale=0.44]{lir_luv_sample.eps}
+\caption{IR luminosity vs. emergent UV luminosity for the samples of dusty
+and dust-poor galaxies.\label{lir_luv}}
+\end{figure}
 
 \subsubsection{Star formation rates}\label{sfrs}
 
@@ -1150,12 +1168,14 @@ We eschew magnitude attenuation in favor of the escape fraction, which
 is the ratio of emergent to intrinsic luminosity.  We define the following
 quantities.
 \begin{itemize}
-\item \alephuv~is the escape fraction at rest-frame 0.16$\,\micron$.  In
+\item \alephuv~is the escape fraction of the continuum
+at rest-frame 0.16$\,\micron$.  In
 relation to A$_{\mathrm{UV}}$,
 f$_{\mathrm{esc}}$(0.16$\,\micron$) = 10$^{-\mathrm{A}_{\mathrm{UV}}/2.5}$.
-\item \alephha~is the escape fraction of the H$\alpha$ line luminosity.
+\item \alephha~is the escape fraction of the H$\alpha$ emission line luminosity.
 \item \alephuvha~is the escape fraction extrapolated from \alephuv~to the
-wavelength of H$\alpha$---the attenuation formula prediction.  For the
+wavelength of H$\alpha$---the attenuation formula prediction for the escape
+fraction at rest-frame 0.66$\,\micron$.  For the
 attenuation formula in \citet{calzetti00}, \alephuvha~= \alephuv$^{0.33}$.
 \end{itemize}
 
@@ -1172,10 +1192,11 @@ ionizing stars are surrounded by more dust than are the nonionizing stars.
 
 The H$\alpha$ escape fractions in \citet{calzetti94} come from the ratios of
 H$\alpha$ to H$\beta$
-line luminosities.  In the absence of dust the ratio is 2.86, so
-($L_{\mathrm{H}\alpha}$/$L_{\mathrm{H}\beta}$)/2.86~=~\alephha/\alephhb.  Since
-\alephhb~is a power-law function of \alephha, the ratio of line luminosities
-uniquely determines \alephha.
+line luminosities.  In the absence of dust and for Case B recombination
+the ratio is 2.86, so
+($L_{\mathrm{H}\alpha}$/$L_{\mathrm{H}\beta}$)/2.86 = \alephha/\alephhb.  Since
+they assume that \alephhb~is a power-law function of \alephha, the ratio of line
+luminosities uniquely determines \alephha.
 
 The UV and 0.66$\,\micron$ escape fractions in \citet{calzetti94} come from
 comparing spectra of
@@ -1186,7 +1207,7 @@ relation is technically
 \alephha~= \alephuvha$^{2.3}$.  \citet{calzetti97b} uses the Milky Way
 extinction formula of \citet{howarth83} to determine H$\alpha$ escape
 fractions for low-redshift dust-poor galaxies; if we instead use the
-attenuation formula, we get \alephha~= \alephuvha$^{2.1}$.
+Calzetti attenuation formula, we get \alephha~= \alephuvha$^{2.1}$.
 
 Our hypothesis is that the H$\alpha$ and 0.66$\,\micron$ escape fractions
 agree---that dusty galaxies have uniform dust distributions.
@@ -1199,7 +1220,8 @@ the \citet{calzetti97b} result.
 galaxies}
 
 The sample, from \citet{overzier11}, contains galaxies that lie roughly on
-the low-redshift IRX-$\beta$ relation (rederived in the same paper).  This
+the low-redshift IRX-$\beta$ relation (rederived in the same paper).  IRX
+is IR luminosity divided by emergent UV luminosity.  This
 relation is a blunt instrument we
 use to determine whether or not galaxies obey an attenuation formula at UV
 wavelengths; \alephuv~is a function of IRX and an attenuation formula relates
@@ -1317,9 +1339,9 @@ effects.  The best-fit relation for the low-redshift dusty galaxies seems to:
 (1) underestimate H$\alpha$ escape fractions at low UV escape fractions; and (2)
 overestimate H$\alpha$ escape fractions at high UV escape fractions (top
 right panel of Fig. \ref{fha_fuv}).  This may reflect our constraint that
-\alephha~=1 when
-\alephuv~=1, but the lack of galaxies with H$\alpha$ escape fractions at or
-below the relation may be due to galaxies with H$\alpha$ SFRs below the limit
+\alephha~= 1 when
+\alephuv~= 1, but the lack of galaxies with H$\alpha$ escape fractions at or
+below the best-fit relation may be due to galaxies with H$\alpha$ SFRs below the limit
 of the sample.  We do not measure H$\alpha$ line flux limits for galaxies that
 meet the selection criteria of \citet{hwang13} and have undetected H$\alpha$
 line fluxes.  If we replace all H$\alpha$-detected SFRs with SFRs corresponding
@@ -1332,7 +1354,7 @@ escape fractions $> 10^{-2}$.  Despite our best efforts to measure H$\alpha$
 line flux limits, we still lack them for galaxies lacking spectroscopic
 redshifts.  If we replace all H$\alpha$-detected SFRs with SFRs corresponding
 to a reasonable H$\alpha$ line flux limit for the grism observations
-($5 \times 10^{-17}$ erg s$^{-1}$ cm$^{-2}$), we fill in the space with low
+\citep[$5 \times 10^{-17}$ erg s$^{-1}$ cm$^{-2}$,][]{brammer12}, we fill in the space with low
 H$\alpha$ escape fractions at low UV escape fractions.  The decrease in
 dispersion is probably an artifact of the grism detection limit and a paucity
 of spectroscopic redshifts in UDS and the part of COSMOS in CANDELS.
@@ -1361,9 +1383,7 @@ would have in low-redshift dust-poor galaxies.
 dusty galaxies.  In high-redshift dusty galaxies,
 regions with ionizing stars have
 lower escape fractions than the extrapolation and higher escape fractions than
-they would have in low-redshift dust-poor galaxies.  A conclusion about the
-uniformity of dust distributions in high-redshift dusty galaxies is subject to
-an assumption about the attenuation formula.\label{fha_fuv}}}
+they would have in low-redshift dust-poor galaxies.\label{fha_fuv}}}
 \end{figure}
 
 \section{Discussion}\label{sec:discuss}
@@ -1670,8 +1690,8 @@ Elbaz, D., et al.\ 2012, \apj, 744, 154
 \bibitem[Reddy et al.(2010)]{reddy10} Reddy, N.~A., Erb, D.~K.,
 Pettini, M., Steidel, C.~C., \& Shapley, A.~E.\ 2010, \apj, 712, 1070
 
-\bibitem[Santini et al.(2014)]{santini14} Santini, P., Ferguson, 
-H.~C., Fontana, A., et al.\ 2014, arXiv:1412.5180
+\bibitem[Santini et al.(2015)]{santini14} Santini, P., Ferguson, 
+H.~C., Fontana, A., et al.\ 2015, \apj, 801, 97
 
 \bibitem[Simpson et al.(2012)]{simpson12} Simpson, C., Rawlings, 
 S., Ivison, R., et al.\ 2012, \mnras, 421, 3060
