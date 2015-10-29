@@ -1,3 +1,9 @@
+We hope that our response below convinces the referee.  Instead of
+bolding our changes to the text we include a file named
+diff_paper2.html. Blue text is from the second submission; magenta text
+is from this submission.  Please let us know if these color choices are
+problematic. Black text shows the context around the changes.
+
 > * We clarify our language in the last paragraph of the Introduction.
 > Foreground screens are commonly assumed by the high-redshift
 > community; we expand our explanation in the Introduction.
