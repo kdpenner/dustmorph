@@ -5,6 +5,9 @@ import matplotlib.pyplot as plot
 import matplotlib.lines as mlines
 from matplotlib.legend_handler import HandlerLine2D
 from matplotlib.ticker import MultipleLocator
+from scipy.optimize import brentq
+from scipy.interpolate import interp1d
+
 
 table = numpy.genfromtxt('KFUV_KIR.dat')
 
@@ -12,7 +15,11 @@ uvfescs = 10.**(-.4*numpy.linspace(start = .55, stop = 5.5, num = 10))
 
 sfruv = uvfescs
 
+#sfruv = numpy.linspace(start = .0001, stop = .0002, num = 10)
+
 sfrir = 1-sfruv
+
+#sfrir = sfruv/uvfescs - sfruv
 
 kuvtime = 10.**(table[:,1])
 
@@ -26,13 +33,26 @@ uvcorrtime = kuvtime/kuvfinal
 
 newsfruv = numpy.dot(numpy.matrix(uvcorrtime).transpose(), numpy.matrix(sfruv))
 
+time = 10.**table[:,0]
+
+uvzerofind = interp1d(time, uvcorrtime-1.)
+
+uvduration = brentq(uvzerofind, time[0], time[-1])
+
 kirtime = 10.**table[:, 2:]
 
-kirfinal = 4.5e-44*3.826e33
+#kirfinal = 4.5e-44*3.826e33
 
 #kirfinal = kirtime[-1]
 
 #print kirfinal
+
+kirfinal = numpy.zeros(uvfescs.shape)
+
+for i in xrange(len(uvfescs)):
+  irinterp = interp1d(time, kirtime[:, i])
+  kirfinal[i] = irinterp(uvduration)
+#  kirfinal[i] = 4.5e-44*3.826e33
 
 ircorrtime = kirtime/kirfinal
 
@@ -44,7 +64,7 @@ newsfrir = numpy.dot(numpy.matrix(ircorrtime), numpy.matrix(sfrirm))
 
 newsfrtot = newsfruv+newsfrir
 
-goodtimes = numpy.where(table[:,0] >= 7.3)[0]
+goodtimes = numpy.where(time >= uvduration)[0]
 
 newsfrgood = newsfrtot[goodtimes, :]
 newsfruvgood = newsfruv[goodtimes, :]
@@ -53,7 +73,7 @@ rangeuvfescs = (newsfruvgood/newsfrgood).transpose()
 
 hafescs = uvfescs**0.55
 
-sfrha = hafescs
+sfrha = (sfruv+sfrir)*hafescs
 
 rangehafescs = (sfrha/newsfrgood).transpose()
 

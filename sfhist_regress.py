@@ -4,8 +4,9 @@ import numpy as np
 from scipy.optimize import curve_fit
 from scipy.optimize import brentq
 from scipy.interpolate import interp1d
-from scipy.interpolate import interp2d
-from scipy.optimize import root
+import matplotlib.pyplot as plot
+
+newparams = np.zeros(10000)
 
 highztable = np.genfromtxt('error_fit_highz')
 
@@ -18,14 +19,6 @@ uvesc = highztable[:,2]/(highztable[:,2]+highztable[:,3])
 haesc = highztable[:,0]/(highztable[:,2]+highztable[:,3])
 haescerr = highztable[:,1]/(highztable[:,2]+highztable[:,3])
 
-def escregress(x, q):
-  return np.power(x, q)
-
-param0 = .76
-
-param, paramcov = curve_fit(escregress, uvesc, haesc, sigma = haescerr, \
-absolute_sigma = True, p0 = param0)
-
 converttable = np.genfromtxt('KFUV_KIR.dat')
 
 time = 10.**(converttable[:,0])
@@ -36,48 +29,56 @@ kuvfinal = 1.4e-28*3.826e33/(3.e18/1600.)
 
 uvcorrtime = kuvtime/kuvfinal
 
-kirtime = 10.**converttable[:, 2:]
-
-kirfinal = 4.5e-44*3.826e33
-
-ircorrtime = kirtime/kirfinal
-
 uvzerofind = interp1d(time, uvcorrtime-1.)
 
 uvduration = brentq(uvzerofind, time[0], time[-1])
 
-uvnewdurations = np.random.uniform(low = uvduration - 7.e7, \
-high = uvduration + 7.e7, size = len(uvesc))
+kirtime = 10.**converttable[:, 2:]
 
-uvcorr_newdurations = uvzerofind(uvnewdurations)+1.
+def escregress(x, q):
+  return np.power(x, q)
 
-newsfruv = sfruv*uvcorr_newdurations
+param0 = .55
+  
+#param, paramcov = curve_fit(escregress, uvesc, haesc, sigma = haescerr, \
+#absolute_sigma = True, p0 = param0)
 
 mark_uvesc = 10.**(-.4*np.linspace(start = .55, stop = 5.5, num = 10))
 
 closest_uvesc = np.abs(np.subtract.outer(mark_uvesc, uvesc)).argmin(0)
 
-newsfrir = np.zeros(sfrir.shape)
+for j in xrange(10000):
 
-for i in xrange(len(mark_uvesc)):
-  irzerofind = interp1d(time, ircorrtime[:, i]-1.)
-  irduration = brentq(irzerofind, time[0], time[-1])
-  num_gals = (closest_uvesc == i).sum()
-  irnewdurations = np.random.uniform(low = irduration - 7.e7, \
-  high = uvduration + 7.e7, size = num_gals)
-  ircorr_newdurations = irzerofind(irnewdurations)+1.
-  ind_gals = (closest_uvesc == i)
-  newsfrir[ind_gals] = sfrir[ind_gals]*ircorr_newdurations
+  uvnewdurations = np.random.uniform(low = uvduration, \
+  high = uvduration + 9.e7, size = len(uvesc))
+  
+  uvcorr_newdurations = uvzerofind(uvnewdurations)+1.
+  
+  newsfruv = sfruv*uvcorr_newdurations
 
-newuvesc = newsfruv/(newsfruv+newsfrir)
-newhaesc = sfrha/(newsfruv+newsfrir)
-newhaescerr = sfrhaerr/(newsfruv+newsfrir)
-
-newparam, newparamcov = curve_fit(escregress, newuvesc, newhaesc, \
-sigma = newhaescerr, absolute_sigma = True, p0 = param0)
-
-print param
-print newparam
-
-
-
+  newsfrir = np.zeros(sfrir.shape)
+  
+  for i in xrange(len(mark_uvesc)):
+    irinterp = interp1d(time, kirtime[:, i])
+  #  irduration = brentq(irzerofind, time[0], time[-1])
+  #  num_gals = (closest_uvesc == i).sum()
+  #  irnewdurations = np.random.uniform(low = irduration - 7.e7, \
+  #  high = uvduration + 7.e7, size = num_gals)
+    ind_gals = (closest_uvesc == i)
+    irnewdurations = uvnewdurations[ind_gals]
+    kirtime_gals = irinterp(irnewdurations)
+    kirfinal_gals = irinterp(uvduration)
+  #  kirfinal_gals = 4.5e-44*3.826e33
+    newsfrir[ind_gals] = sfrir[ind_gals]*kirtime_gals/kirfinal_gals
+  
+  newuvesc = newsfruv/(newsfruv+newsfrir)
+  newhaesc = sfrha/(newsfruv+newsfrir)
+  newhaescerr = sfrhaerr/(newsfruv+newsfrir)
+  
+  newparam, newparamcov = curve_fit(escregress, newuvesc, newhaesc, \
+  sigma = newhaescerr, absolute_sigma = True, p0 = param0)
+  
+  newparams[j] = newparam
+  
+plot.hist(newparams, bins = 20)
+plot.show()
