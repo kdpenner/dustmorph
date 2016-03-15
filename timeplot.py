@@ -23,7 +23,7 @@ sfrir = 1-sfruv
 
 kuvtime = 10.**(table[:,1])
 
-kuvfinal = 1.4e-28*3.826e33/(3.e18/1600.)
+kuvfinal = 1.313e-28*3.826e33/(3.e18/1500.)
 
 #kuvfinal = kuvtime[-1]
 
@@ -51,8 +51,8 @@ kirfinal = numpy.zeros(uvfescs.shape)
 
 for i in xrange(len(uvfescs)):
   irinterp = interp1d(time, kirtime[:, i])
-  kirfinal[i] = irinterp(uvduration)
-#  kirfinal[i] = 4.5e-44*3.826e33
+#  kirfinal[i] = irinterp(uvduration)
+  kirfinal[i] = 4.5e-44*3.826e33
 
 ircorrtime = kirtime/kirfinal
 
@@ -64,14 +64,14 @@ newsfrir = numpy.dot(numpy.matrix(ircorrtime), numpy.matrix(sfrirm))
 
 newsfrtot = newsfruv+newsfrir
 
-goodtimes = numpy.where(time >= uvduration)[0]
+goodtimes = numpy.where(time > 10.**7.3)[0]
 
 newsfrgood = newsfrtot[goodtimes, :]
 newsfruvgood = newsfruv[goodtimes, :]
 
 rangeuvfescs = (newsfruvgood/newsfrgood).transpose()
 
-hafescs = uvfescs**0.55
+hafescs = uvfescs**0.537
 
 sfrha = (sfruv+sfrir)*hafescs
 
@@ -118,9 +118,9 @@ color2 = '#1b9e77'
 
 fig, ax1 = plot.subplots()
 
-ax1.plot([.001, 1], numpy.power([.001, 1], 0.55), linestyle = '-', \
+ax1.plot([.001, 1], numpy.power([.001, 1], 0.537), linestyle = '-', \
 color = color1, linewidth = 4, marker = None, \
-label = r'f$_{esc}$(H$\alpha$) = f$_{esc}$(0.16$\mu$m)$^{0.55}$')
+label = r'f$_{esc}$(H$\alpha$) = f$_{esc}$(0.16$\mu$m)$^{0.537}$')
 
 ax1.plot(rangeuvfescs, rangehafescs, marker = 'o', color = 'k', \
 linestyle = 'None')

@@ -25,11 +25,12 @@ time = 10.**(converttable[:,0])
 
 kuvtime = 10.**(converttable[:,1])
 
-kuvfinal = 1.4e-28*3.826e33/(3.e18/1600.)
+kuvfinal = 1.313e-28*3.826e33/(3.e18/1500.)
 
 uvcorrtime = kuvtime/kuvfinal
 
 uvzerofind = interp1d(time, uvcorrtime-1.)
+uvtimeinterp = interp1d(time, kuvtime)
 
 uvduration = brentq(uvzerofind, time[0], time[-1])
 
@@ -43,16 +44,20 @@ param0 = .55
 #param, paramcov = curve_fit(escregress, uvesc, haesc, sigma = haescerr, \
 #absolute_sigma = True, p0 = param0)
 
+#print param
+
 mark_uvesc = 10.**(-.4*np.linspace(start = .55, stop = 5.5, num = 10))
 
 closest_uvesc = np.abs(np.subtract.outer(mark_uvesc, uvesc)).argmin(0)
 
 for j in xrange(10000):
 
-  uvnewdurations = np.random.uniform(low = uvduration, \
-  high = uvduration + 9.e7, size = len(uvesc))
+  uvnewdurations = np.random.uniform(low = 10.**7.3, \
+  high = 10.**10.175, size = len(uvesc))
   
-  uvcorr_newdurations = uvzerofind(uvnewdurations)+1.
+  #uvnewdurations = np.zeros(len(uvesc))+uvduration
+  
+  uvcorr_newdurations = uvtimeinterp(uvnewdurations)/kuvfinal
   
   newsfruv = sfruv*uvcorr_newdurations
 
@@ -67,8 +72,8 @@ for j in xrange(10000):
     ind_gals = (closest_uvesc == i)
     irnewdurations = uvnewdurations[ind_gals]
     kirtime_gals = irinterp(irnewdurations)
-    kirfinal_gals = irinterp(uvduration)
-  #  kirfinal_gals = 4.5e-44*3.826e33
+  #  kirfinal_gals = irinterp(uvduration)
+    kirfinal_gals = 4.5e-44*3.826e33
     newsfrir[ind_gals] = sfrir[ind_gals]*kirtime_gals/kirfinal_gals
   
   newuvesc = newsfruv/(newsfruv+newsfrir)
