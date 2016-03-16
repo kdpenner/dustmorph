@@ -426,16 +426,22 @@ and dust-poor galaxies.\label{lir_luv}}
 
 \subsubsection{Star formation rates}\label{sfrs}
 
-The equations in \citet{kennicutt98} relate IR, emergent UV, and emergent
-H$\alpha$ luminosities to star formation rates (SFRs).  We assume
-that a galaxy's total SFR: (1) is the sum of its IR- and emergent UV-derived
-SFR; and (2) equals the intrinsic (not emergent)
+Equations in \citet{kennicutt98} and \citet{madau14} relate IR, emergent UV,
+and emergent H$\alpha$ luminosities to star formation rates (SFRs).  We multiply
+UV luminosities by $2.68\times10^{-10}$ M$_{\odot}$ yr$^{-1}$ $L_{\odot}^{-1}$;
+IR luminosities by $1.72\times10^{-10}$ M$_{\odot}$ yr$^{-1}$ $L_{\odot}^{-1}$;
+and H$\alpha$ luminosities by
+$3.02\times10^{-8}$ M$_{\odot}$ yr$^{-1}$ $L_{\odot}^{-1}$.
+We assume that a galaxy's total SFR: (1) is the sum of its IR- and emergent
+UV-derived SFR; and (2) equals the intrinsic (not emergent)
 H$\alpha$-derived SFR.  The SFR equations are valid under different assumptions
 for the duration of a galaxy's star formation episode.  Our assumptions will not
-conflict with those of \citet{kennicutt98} if: (1) the SFR has been
-constant for $\sim 10^{8}$ yr, so that the instantaneous H$\alpha$-derived SFR
-equals the prolonged UV- and IR-derived SFRs; and (2) the dominant
-source for the IR luminosity is not old stars or an active nucleus.
+conflict with those of \citet{kennicutt98} and \citet{madau14} if: (1) the SFR
+has been constant for 415 Myr, so that the instantaneous
+H$\alpha$-derived SFR equals the prolonged UV- and IR-derived SFRs; and (2)
+the dominant source for the IR luminosity is not old stars or an active nucleus.
+We explore the uncertainty in our results due to variable durations of star
+formation episodes in \S\ref{sec:discuss}.
 
 We must exclude galaxies with active nuclei because fractions of their IR,
 emergent UV, and emergent H$\alpha$ luminosities will be unrelated to newly
@@ -1229,7 +1235,7 @@ expect them to have dust properties that conform with the properties of
 the galaxies in the \citet{calzetti00} sample.  We calculate \alephha~and
 \alephuv~for each galaxy in the following way.
 \begin{itemize}
-\item \alephuv~= ($L_{\mathrm{IR}}$/($1.68\times0.16\times
+\item \alephuv~= ($L_{\mathrm{IR}}$/($1.56\times0.16\times
 L_{\mathrm{0.16}}$)+1)$^{-1}$.  This is equivalent to \alephuv~= (emergent UV
 SFR)/(IR SFR + emergent UV SFR).
 %\item \alephuvha~= \alephuv$^{0.33}$.
@@ -1239,10 +1245,10 @@ SFR)/(IR SFR + emergent UV SFR).
 We use these quantities to find, for the sample, a best-fit power-law index $q$
 for the form \alephha~= \alephuv$^{q}$.
 
-The top left panel of Fig. \ref{fha_fuv} shows that \alephha~= \alephuv$^{0.80}$
+The top left panel of Fig. \ref{fha_fuv} shows that \alephha~= \alephuv$^{0.77}$
 for the low-redshift
 dust-poor galaxies.  If we use the IR and UV luminosities from
-\citealt{overzier11}, \alephha~= \alephuv$^{0.84}$.  We lack
+\citealt{overzier11}, \alephha~= \alephuv$^{XXXX}$.  We lack
 uncertainties on any SFRs so we also perform a robust linear regression,
 which requires a fit to the form $\log\,$\alephha~= $q\,\log\,$\alephuv.  It
 returns a similar result, as does a bootstrap resampling.  We recover a relation
@@ -1256,7 +1262,7 @@ method of determining \alephha.
 \subsection{A new relation for dusty galaxies at low redshift?}
 
 The top right panel of Fig. \ref{fha_fuv} shows that \alephha~=
-\alephuv$^{0.55}$ for the low-redshift
+\alephuv$^{0.53}$ for the low-redshift
 dusty galaxies.  We use uncertainties only on the emergent H$\alpha$-derived
 SFR---we treat it as the dependent variable---in the weighted fit.  The relation
 for dust-poor galaxies is seemingly inapplicable to dusty galaxies at
@@ -1283,14 +1289,14 @@ preface `inapplicable' with `seemingly.'
 redshift?}\label{subsec:highz}
 
 The bottom left panel of Fig. \ref{fha_fuv} shows that \alephha~=
-\alephuv$^{0.55}$ for high-redshift
+\alephuv$^{0.54}$ for high-redshift
 dusty galaxies.  We leave limits out of this fit.  The uncertainty in
 the index is very small; this is not surprising given the number of galaxies.
 The dispersion about the best-fit relation is large; the central 50\% of
-galaxies with H$\alpha$-detected SFRs lies between \alephha~= \alephuv$^{0.45}$
-and \alephha~= \alephuv$^{0.66}$.  A survival regression, which incorporates
+galaxies with H$\alpha$-detected SFRs lies between \alephha~= \alephuv$^{XXXX}$
+and \alephha~= \alephuv$^{XXXX}$.  A survival regression, which incorporates
 H$\alpha$ SFR limits in a fit to the form $\log\,$\alephha~=
-$q\,\log\,$\alephuv, finds $q = 0.47$, as does a simple linear regression using
+$q\,\log\,$\alephuv, finds $q = XXXX$, as does a simple linear regression using
 only the H$\alpha$-detected SFRs.  None of the galaxies have limits for both
 the UV and H$\alpha$ SFRs.  The main effect of including limits in the
 regression is to increase the standard error of the sample's best-fit index; a
@@ -1309,9 +1315,9 @@ summarizes the relevant quantities for the main fit to each sample of galaxies.
 \colhead{DOF}
 }
 \startdata
-Low-z dust-poor & 0.799 & 0.094 & 6.0  & 13 \\
-Low-z dusty     & 0.548 & 0.029 & 67.0 & 54 \\
-High-z dusty    & 0.549 & 0.008 & 6.6  & 320
+Low-z dust-poor & 0.766 & XXXX & XXXX & XXXX \\
+Low-z dusty     & 0.532 & XXXX & XXXX & XXXX \\
+High-z dusty    & 0.537 & XXXX & XXXX  & XXXX
 \enddata
 \end{deluxetable}
 
@@ -1415,12 +1421,12 @@ formula modified according to
 \alephuvha~=
 \alephuv$^{0.25}$ instead of \alephuvha~= \alephuv$^{0.33}$.  The combination of
 this \citet{kriek13} formula and our result implies that
-\alephha~= \alephuvha$^{2.2}$.  The \citet{reddy15} attenuation formula has
-\alephuvha~= \alephuv$^{0.23}$, implying that \alephha~= \alephuvha$^{2.4}$.
+\alephha~= \alephuvha$^{2.1}$.  The \citet{reddy15} attenuation formula has
+\alephuvha~= \alephuv$^{0.23}$, implying that \alephha~= \alephuvha$^{2.3}$.
 If the true formula instead has a
 much lower 0.66$\,\micron$ escape fraction for a given UV escape
 fraction than does the \citet{calzetti00} formula---say, \alephuvha~=
-\alephuv$^{0.55}$---we conclude that for dusty
+\alephuv$^{0.54}$---we conclude that for dusty
 galaxies the H$\alpha$ and 0.66$\,\micron$ escape fractions agree.  Our
 conclusion regarding the uniformity of dust distributions depends on the
 assumed attenuation formula.  We cannot reject our hypothesis.  The
@@ -1434,41 +1440,59 @@ the relation for low-redshift dust-poor galaxies.
 The dispersion about the best-fit relation for high-redshift dusty galaxies
 is large, yet it is susceptible
 to our possibly invalid assumption that a galaxy's SFR has been
-constant for at least $10^{8}$ yr.  For example, if most
-massive stars formed over 15 Myr instead of 300 Myr, we should multiply
-$L_{0.16}$ and $L_{\mathrm{IR}}$ by larger numbers than we do here to derive the
-UV and IR SFRs.  The true UV SFR is 57\% higher and the true IR SFR is 63\%
+constant for at least 415 Myr.  For example, if most
+massive stars formed over 15 Myr instead of 415 Myr, we should multiply
+$0.16 \times L_{0.16}$ and $L_{\mathrm{IR}}$ by larger numbers than we do here to derive the
+UV and IR SFRs.  The true UV SFR is 56\% higher and the true IR SFR is 60\%
 higher \citep{madau14}.  The true UV escape fraction is little different;
 because the true total SFR is higher, the true H$\alpha$ escape fraction is
 lower.  Fig. \ref{spread} exemplifies the spread of true escape fractions that
-could contribute to a given escape fraction.  The spread is imprecise for three
+could contribute to a given escape fraction.  The spread is imprecise for two
 reasons:
 \begin{enumerate}
-\item \citet{madau14} calculate conversion factors between luminosities and
-star formation rates at 0.15$\,\micron$ rather than 0.16$\,\micron$.
-\item \citet{madau14} use the models of \citet{conroy10} to calculate these
-conversion factors.  The conversion factor between $L_{\mathrm{IR}}$ and
+\item We define the UV escape fraction as a function of UV- and IR-derived SFRs.
+\citet{madau14} use the models of \citet{conroy10} to calculate
+conversion factors between luminosities and SFRs.  The
+conversion factor between $L_{\mathrm{IR}}$ and
 IR-derived SFR is a function of the UV escape fraction as well as the duration
 of the star formation episode: SFR(IR)/$L_{\mathrm{IR}} = \mathrm{function}
-[\mathrm{duration}, f_{\mathrm{esc}}(0.16\,\micron)]$.  We calculate the spread
-using the conversion factor for the given UV escape fraction.
-\item The \citet{kennicutt98} conversion factors for $L_{0.16}$ and
-$L_{\mathrm{IR}}$ are valid at different durations of the star formation
-episode.
+[\mathrm{duration}, f_{\mathrm{esc}}(0.16\,\micron)]$.  We set aside the
+circularity that results from using both these functions by fixing the UV
+escape fraction in the SFR(IR)/$L_{\mathrm{IR}}$ function to the
+given UV escape fraction.
+\item Since SFR(IR)/$L_{\mathrm{IR}}$ is a function of more than duration of the
+star formation episode, at a duration of 415 Myr most of the IR
+conversion factors differ from our adopted value in \S\ref{sfrs}.
 \end{enumerate}
 Another scenario is that massive stars stopped forming within the last
 15 Myr.  Perhaps some of the high-redshift dusty galaxies have
 complicated star formation histories; the combined effect of deriving correct
 SFRs might lead to lower dispersion.
 
+We perform a second experiment to investigate the effect of episodes of constant
+star formation rate with variable duration on the dispersion about the best-fit
+relation.  For each high-redshift dusty galaxy we draw a random duration from a
+uniform distribution with limits at 20 Myr and 15 Gyr.  We calculate the
+galaxy's UV- and IR-derived SFRs using the conversion factors for this duration.
+The IR conversion factor requires a UV escape fraction from one of the given
+UV escape fractions shown in Fig. \ref{spread}; we use the given UV escape
+fraction which is closest to the galaxy's UV escape fraction for a duration
+of 415 Myr.  We use the UV- and IR-derived SFRs to calculate UV and H$\alpha$
+escape fractions for the random duration.  We perform a regression for the
+sample of galaxies, record $q$, and repeat the process 10,000 times.  Fig.
+\ref{} shows the distribution of $q$ values from this process.  While the
+$q$ values bounding the central 50\% of the sample encompass the range of $q$
+values in Fig. \ref{}, we caution that this simulation involves many
+assumptions.
+
 \begin{figure}[!ht]
 \centering
 \includegraphics[scale=0.5]{spread_hauv_age.eps}
 \caption{The spread of true escape fractions that could contribute to
 a given escape fraction if a galaxy's SFR has been constant for a
-duration different from $10^{8}$ yr.  We assign the input
+duration different from 415 Myr.  We assign the input
 $f_{\mathrm{esc}}$ values to the conversion factors
-between luminosity and SFR in \citet{kennicutt98}.  The UV and IR conversion
+between luminosities and SFRs in \S\ref{sfrs}.  The UV and IR conversion
 factors change as the duration of the star formation episode varies \citep{madau14}.
 The durations for the points shown here range from $2\times10^{7}$ to
 $1.5\times10^{10}$ yr.\label{spread}}
@@ -1528,12 +1552,12 @@ indices ($\beta$ values) and ratios of IR to UV luminosities (IRX values).
 fraction, from the H$\alpha$ luminosity and the total star formation rate.
 \item For the \citet{overzier11} sample of low-redshift dust-poor galaxies, we
 recover the \citet{calzetti97b} relation between H$\alpha$ and UV escape
-fractions: \alephha~= \alephuv$^{0.80}$.  Our nonstandard method for determining
+fractions: \alephha~= \alephuv$^{0.77}$.  Our nonstandard method for determining
 H$\alpha$ escape fractions should be grossly correct.
 \item For the \citet{hwang13} sample of low-redshift dusty galaxies, we find
-that \alephha~= \alephuv$^{0.55}$.
+that \alephha~= \alephuv$^{0.53}$.
 \item For our sample of dusty galaxies at $0.7 < z < 1.5$, we find that
-\alephha~= \alephuv$^{0.55}$.  The dispersion about the best-fit relation is
+\alephha~= \alephuv$^{0.54}$.  The dispersion about the best-fit relation is
 large.
 \item The interpretation of the results for dusty galaxies is unclear.  If we
 assume that the \citet{calzetti00} attenuation formula applies to these
