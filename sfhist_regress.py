@@ -5,6 +5,7 @@ from scipy.optimize import curve_fit
 from scipy.optimize import brentq
 from scipy.interpolate import interp1d
 import matplotlib.pyplot as plot
+from matplotlib.ticker import FormatStrFormatter
 
 newparams = np.zeros(10000)
 
@@ -53,7 +54,7 @@ closest_uvesc = np.abs(np.subtract.outer(mark_uvesc, uvesc)).argmin(0)
 for j in xrange(10000):
 
   uvnewdurations = np.random.uniform(low = 10.**7.3, \
-  high = 10.**10.175, size = len(uvesc))
+  high = 10.**9.3, size = len(uvesc))
   
   #uvnewdurations = np.zeros(len(uvesc))+uvduration
   
@@ -84,6 +85,17 @@ for j in xrange(10000):
   sigma = newhaescerr, absolute_sigma = True, p0 = param0)
   
   newparams[j] = newparam
-  
-plot.hist(newparams, bins = 20)
-plot.show()
+
+plot.rcParams['figure.figsize'] = [7.32, 7.32]
+majorFormatter = FormatStrFormatter('%0.3f')
+
+fig, ax = plot.subplots()
+plot.hist(newparams, bins = 16, histtype = 'step', color = 'black', \
+range = (0.52, 0.56))
+ax.set_xlabel(r'best-fit q for f$_{esc}$(H$\alpha$) = f$_{esc}$(0.16$\mu$m)$^{q}$')
+ax.set_ylabel(r'Number')
+ax.xaxis.set_major_formatter(majorFormatter)
+ax.set_xticks(np.arange(.52, .56, .01))
+ax.set_xticks(np.arange(.52, .56, .0025), minor = True)
+
+plot.savefig('dist_hauv_age.eps')

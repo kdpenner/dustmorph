@@ -64,7 +64,7 @@ newsfrir = numpy.dot(numpy.matrix(ircorrtime), numpy.matrix(sfrirm))
 
 newsfrtot = newsfruv+newsfrir
 
-goodtimes = numpy.where(time > 10.**7.3)[0]
+goodtimes = numpy.where((time > 10.**7.3) & (time < 10.**9.3))[0]
 
 newsfrgood = newsfrtot[goodtimes, :]
 newsfruvgood = newsfruv[goodtimes, :]

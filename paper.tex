@@ -1248,7 +1248,7 @@ for the form \alephha~= \alephuv$^{q}$.
 The top left panel of Fig. \ref{fha_fuv} shows that \alephha~= \alephuv$^{0.77}$
 for the low-redshift
 dust-poor galaxies.  If we use the IR and UV luminosities from
-\citealt{overzier11}, \alephha~= \alephuv$^{XXXX}$.  We lack
+\citealt{overzier11}, \alephha~= \alephuv$^{0.80}$.  We lack
 uncertainties on any SFRs so we also perform a robust linear regression,
 which requires a fit to the form $\log\,$\alephha~= $q\,\log\,$\alephuv.  It
 returns a similar result, as does a bootstrap resampling.  We recover a relation
@@ -1293,10 +1293,10 @@ The bottom left panel of Fig. \ref{fha_fuv} shows that \alephha~=
 dusty galaxies.  We leave limits out of this fit.  The uncertainty in
 the index is very small; this is not surprising given the number of galaxies.
 The dispersion about the best-fit relation is large; the central 50\% of
-galaxies with H$\alpha$-detected SFRs lies between \alephha~= \alephuv$^{XXXX}$
-and \alephha~= \alephuv$^{XXXX}$.  A survival regression, which incorporates
+galaxies with H$\alpha$-detected SFRs lies between \alephha~= \alephuv$^{0.44}$
+and \alephha~= \alephuv$^{0.63}$.  A survival regression, which incorporates
 H$\alpha$ SFR limits in a fit to the form $\log\,$\alephha~=
-$q\,\log\,$\alephuv, finds $q = XXXX$, as does a simple linear regression using
+$q\,\log\,$\alephuv, finds $q = 0.46$, as does a simple linear regression using
 only the H$\alpha$-detected SFRs.  None of the galaxies have limits for both
 the UV and H$\alpha$ SFRs.  The main effect of including limits in the
 regression is to increase the standard error of the sample's best-fit index; a
@@ -1315,9 +1315,9 @@ summarizes the relevant quantities for the main fit to each sample of galaxies.
 \colhead{DOF}
 }
 \startdata
-Low-z dust-poor & 0.766 & XXXX & XXXX & XXXX \\
-Low-z dusty     & 0.532 & XXXX & XXXX & XXXX \\
-High-z dusty    & 0.537 & XXXX & XXXX  & XXXX
+Low-z dust-poor & 0.766 & 0.091 & 6.1 & 13 \\
+Low-z dusty     & 0.532 & 0.027 & 65.0 & 54 \\
+High-z dusty    & 0.537 & 0.008 & 6.5 & 320
 \enddata
 \end{deluxetable}
 
@@ -1462,17 +1462,17 @@ escape fraction in the SFR(IR)/$L_{\mathrm{IR}}$ function to the
 given UV escape fraction.
 \item Since SFR(IR)/$L_{\mathrm{IR}}$ is a function of more than duration of the
 star formation episode, at a duration of 415 Myr most of the IR
-conversion factors differ from our adopted value in \S\ref{sfrs}.
+conversion factors differ from the value we adopt in \S\ref{sfrs}.
 \end{enumerate}
 Another scenario is that massive stars stopped forming within the last
 15 Myr.  Perhaps some of the high-redshift dusty galaxies have
 complicated star formation histories; the combined effect of deriving correct
 SFRs might lead to lower dispersion.
 
-We perform a second experiment to investigate the effect of episodes of constant
+We perform a second test to investigate the effect of episodes of constant
 star formation rate with variable duration on the dispersion about the best-fit
 relation.  For each high-redshift dusty galaxy we draw a random duration from a
-uniform distribution with limits at 20 Myr and 15 Gyr.  We calculate the
+uniform distribution with limits at 20 Myr and 2 Gyr.  We calculate the
 galaxy's UV- and IR-derived SFRs using the conversion factors for this duration.
 The IR conversion factor requires a UV escape fraction from one of the given
 UV escape fractions shown in Fig. \ref{spread}; we use the given UV escape
@@ -1482,8 +1482,8 @@ escape fractions for the random duration.  We perform a regression for the
 sample of galaxies, record $q$, and repeat the process 10,000 times.  Fig.
 \ref{} shows the distribution of $q$ values from this process.  While the
 $q$ values bounding the central 50\% of the sample encompass the range of $q$
-values in Fig. \ref{}, we caution that this simulation involves many
-assumptions.
+values in Fig. \ref{}, we caution that our assumption of a uniform distribution
+of durations is likely incorrect.
 
 \begin{figure}[!ht]
 \centering
@@ -1495,7 +1495,7 @@ $f_{\mathrm{esc}}$ values to the conversion factors
 between luminosities and SFRs in \S\ref{sfrs}.  The UV and IR conversion
 factors change as the duration of the star formation episode varies \citep{madau14}.
 The durations for the points shown here range from 20 Myr to
-15 Gyr.\label{spread}}
+2 Gyr.\label{spread}}
 \end{figure}
 
 There are few ways to resolve the uncertainties regarding star formation
