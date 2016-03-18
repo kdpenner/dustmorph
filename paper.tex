@@ -1469,22 +1469,6 @@ Another scenario is that massive stars stopped forming within the last
 complicated star formation histories; the combined effect of deriving correct
 SFRs might lead to lower dispersion.
 
-We perform a second test to investigate the effect of episodes of constant
-star formation rate with variable duration on the dispersion about the best-fit
-relation.  For each high-redshift dusty galaxy we draw a random duration from a
-uniform distribution with limits at 20 Myr and 2 Gyr.  We calculate the
-galaxy's UV- and IR-derived SFRs using the conversion factors for this duration.
-The IR conversion factor requires a UV escape fraction from one of the given
-UV escape fractions shown in Fig. \ref{spread}; we use the given UV escape
-fraction which is closest to the galaxy's UV escape fraction for a duration
-of 415 Myr.  We use the UV- and IR-derived SFRs to calculate UV and H$\alpha$
-escape fractions for the random duration.  We perform a regression for the
-sample of galaxies, record $q$, and repeat the process 10,000 times.  Fig.
-\ref{} shows the distribution of $q$ values from this process.  While the
-$q$ values bounding the central 50\% of the sample encompass the range of $q$
-values in Fig. \ref{}, we caution that our assumption of a uniform distribution
-of durations is likely incorrect.
-
 \begin{figure}[!ht]
 \centering
 \includegraphics[scale=0.5]{spread_hauv_age.eps}
@@ -1496,6 +1480,32 @@ between luminosities and SFRs in \S\ref{sfrs}.  The UV and IR conversion
 factors change as the duration of the star formation episode varies \citep{madau14}.
 The durations for the points shown here range from 20 Myr to
 2 Gyr.\label{spread}}
+\end{figure}
+
+We perform a second test to investigate the effect of episodes of constant
+star formation rate with variable duration on the dispersion about the best-fit
+relation.  For each high-redshift dusty galaxy we draw a random duration from a
+uniform distribution with limits at 20 Myr and 2 Gyr.  We calculate the
+galaxy's UV- and IR-derived SFRs using the conversion factors for this duration.
+The IR conversion factor requires a UV escape fraction from one of the given
+UV escape fractions shown in Fig. \ref{spread}; we use the given UV escape
+fraction which is closest to the galaxy's UV escape fraction for a duration
+of 415 Myr.  We use the UV- and IR-derived SFRs to calculate UV and H$\alpha$
+escape fractions for the random duration.  We perform a regression for the
+sample of galaxies, record the $q$ value, and repeat the process 10,000 times.  Fig.
+\ref{distq} shows the distribution of $q$ values.  While the
+$q$ values bounding the central 50\% of the sample encompass the range of $q$
+values in Fig. \ref{distq}, we caution that our assumption of a uniform
+distribution of durations is likely incorrect.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[scale=0.5]{dist_hauv_age.eps}
+\caption{A distribution of best-fit power-law indices, $q$ values, for the
+relation between H$\alpha$ and UV escape fractions for the dusty galaxies at
+high redshift.  This distribution comes from drawing for each galaxy in the
+sample a random duration between 20 Myr and 2 Gyr for an episode of constant
+star formation rate.\label{distq}}
 \end{figure}
 
 There are few ways to resolve the uncertainties regarding star formation
