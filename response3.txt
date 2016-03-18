@@ -1,0 +1,30 @@
+We hope that our response below convinces the 2nd referee. Instead of
+bolding our changes to the text we include a file named
+diff_paper3.html. Blue text is from the second submission; magenta text
+is from this submission.  Please let us know if these color choices are
+problematic. Black text shows the context around the changes.
+
+> In a new effort to convey my most important concerns, I summarize them
+> briefly:
+> 
+> * The starburst curve does not imply an actual uniform screen geometry
+> between stars and dust. It is only applied *as if* it was a dust
+> screen.
+> 
+> * This insistence on dust screen is distracting and confusing. The
+> paper yields insight into the differential attenuation between the
+> stars and the ionized gas, which can then be translated into
+> constraints on the dust geometry. This should be the main argument of
+> the paper as it is a result it can (and does) provide.
+> 
+The first referee raised the same concerns in all 3 responses. We have
+provided quotes and citations that demonstrate that these concerns are
+contrary to the literature. Conclusions on differential attenuation rely
+on the screen assumption.
+
+> * The precision and accuracy of the methods to compute A(UV) and
+> A(Halpha) needs to be quantified more thoroughly.
+> 
+We have added a paragraph and figure on a Monte Carlo simulation of the
+robustness of the regression result for the sample of dusty galaxies at
+high redshift.
